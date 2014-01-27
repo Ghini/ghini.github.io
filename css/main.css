@@ -71,12 +71,15 @@ h1, h2, h3, h4, h5, legend {
    position:relative;
 }
 #header {
-   //background:#ff0;
-   //padding:40px;
+    //background:#ff0;
+    //padding:40px;
+    font-family: 'Open Sans', sans-serif;
 }
 #content {
     padding-top: 50px;
     padding-bottom: 15em;   /* Height of the footer */
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #main-view {
