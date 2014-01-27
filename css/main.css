@@ -1,0 +1,319 @@
+
+
+// color theme : https://kuler.adobe.com/Fall-Grass-color-theme-2487072/
+/*
+  https://kuler.adobe.com/#themeID/7245;
+  #607056 #519E41 #85BF89 #9DDBB2 #BFE8BE
+  */
+/*
+  https://kuler.adobe.com/#themeID/137458
+  BAE8E5 CCF4FF D9FFF2 BAE8CB CCFFD1
+  */
+
+/* $orange: #ff530d; */
+/* $baby-blue: #bdd4de; */
+/* $light-grey: #efefef; */
+/* $dark-blue: #2b3a42; */
+
+/* $background-color: #efefef; //#FCFFF5; //#D9CB9E; //#F5E5C0; */
+
+/* $heading-color: #2B3A42; //#3F5765; // #1E1E20; // #265573; // #386d73; */
+/* $heading-font-family: 'Raleway', sans-serif; */
+/* $heading-font-weight: 300; */
+
+/* $font-family: 'Open Sans', sans-serif; */
+/* $font-color: #3F5765; //#2A2C2B; //#386d73; */
+/* $link-color: #265573; */
+
+/* $navbar-bg-color: #2B3A42; //#193441; // #374140; // #097380; // #265573; */
+/* $navbar-color: $background-color; //#F5E5C0; //#265573; */
+/* $navbar-height: 50px;  // this is the default from bootstrap */
+/* $navbar-border: solid 1px #FF530D; //#DC3522; //orange; */
+
+/* $footer-height: 15em; */
+
+/* $footer-bg-color: #2B3A42; //#81A68A; */
+/* $footer-font-color: #BDD4DE; //$background-color; //#265573; */
+/* $footer-border: $navbar-border; */
+
+/* $icon-color: #FF530D; */
+
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    //background-color: #FFFDD0;
+    background-color: #efefef;
+    color: #3F5765;
+    font-family: 'Open Sans', sans-serif;
+    //padding-top: 3em; // make space for navbar
+}
+
+
+p  {
+    color: #3F5765;
+}
+
+a {
+    color: #265573;
+}
+
+h1, h2, h3, h4, h5, legend {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #2B3A42;
+    margin-left: 0;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   //background:#ff0;
+   //padding:40px;
+}
+#content {
+    padding-top: 50px;
+    padding-bottom: 15em;   /* Height of the footer */
+}
+
+#main-view {
+    padding-top: 2em;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 15em;   /* Height of the footer */
+    
+    // everything above this line is part of the css sticky footer
+    border-top: solid 1px #FF530D;
+    background-color: #2B3A42;
+    color: #BDD4DE;
+    //padding-top: 3em;
+
+    .row {
+        margin-top: 4em;
+    }
+    
+    a {
+        color: #BDD4DE;
+        display: block;
+    }
+
+    .copyright {
+        top: 0;
+        font-size: .9em;
+        //margin-top: 2em;
+        margin-right: 2em;
+        background-color: inherit;
+    }
+}
+
+/* .container { */
+/*     min-height: 100%; */
+/* } */
+
+.error {
+    color: red;
+}
+
+.navbar {
+    background-color: #2B3A42;
+    color: #efefef;
+    border-bottom: solid 1px #FF530D;
+    //margin-bottom: 0;
+    
+    a, li > a { 
+        color: #efefef;
+    }
+
+    a:hover, li > a:hover { 
+        color: #FF530D;
+        //background-color: white;
+    }
+}
+
+.dropdown-menu {
+    border-bottom: solid 1px #FF530D;
+
+    a, li > a { 
+        color: #2B3A42;
+    }
+
+    a:hover, li > a:hover {
+        color: red; //#FF530D;
+        background-color: white !important;
+        background-image: none; // undo bootstrap background gradient on hover
+    }
+}
+
+.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #FF530D;//#d5d5d5;
+}
+
+
+.fa {
+    color: #FF530D;
+}
+
+.main-page {
+
+    & > div {
+        //padding: 50px 200px;
+    }
+    
+    h4 {
+        margin: 20px 0 0 0;
+    }
+
+    .section1 {
+        //background-color: #d4d9b0; //#ffffec // #fcf6d9;
+        //background-color: #BDD4DE; //#9fbf8f; //#fff9df // #fcf6d9;
+        padding-bottom: 8em;
+    }
+
+    .features {
+        margin-top: 2em;
+        
+        .row {
+            margin-top: 2em;
+        }        
+
+        h4 { 
+            margin: 0;
+        }
+
+        i {
+            margin: 0;
+        }
+        
+    }
+    
+    .section2 {
+        padding: 5em 0;
+        /* padding-top: 3em; */
+        /* padding-bottom: 10em; */
+        background-color: #BDD4DE; //#9fbf8f; //#fff9df // #fcf6d9;
+    }   
+}
+
+#privacy-page {
+    padding-bottom: 3em;
+}
+
+#contact-page {
+    padding-bottom: 3em;
+}
+
+#faq-page {
+    padding-bottom: 3em;
+
+    h4 {
+        font-weight: bold;
+    }
+    
+    .question-block {
+        padding-top: .5em;
+    }
+}
+
+// add padding to acount for the navbar
+.show-menubar {
+    padding-top: 70px;
+}
+
+/* @media (max-width: 979px) { */
+/*   body { */
+/*     padding-top: 0px; */
+/*   } */
+/* } */
+
+.curious {
+    text-align: center;
+    a {
+        color: #ff530d;
+    }
+}
+
+.not-ready-warning {
+    background-color: #ff530d;
+    font-size: 90%;
+    text-align: center;
+    p {
+        color: #efefef;;
+    }
+}
+
+input {
+    background-color: #efefef;// !important;
+}
+
+#curious-page {
+    padding-bottom: 3em;
+    li {
+        padding-bottom: 1em;
+    }
+
+    .feature-title {
+        font-weight: bold;
+    }
+}
+
+
+
+
+/*
+ * Re-add nested dropdown support to BS3
+ */ 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+
+.dropdown-submenu>a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+
+.dropdown-submenu:hover>a:after{
+    border-left-color:#ffffff;
+}
+
+.dropdown-submenu.pull-left{
+    float:none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
