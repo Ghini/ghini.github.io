@@ -1,0 +1,798 @@
+
+
+// color theme : https://kuler.adobe.com/Fall-Grass-color-theme-2487072/
+/*
+  https://kuler.adobe.com/#themeID/7245;
+  #607056 #519E41 #85BF89 #9DDBB2 #BFE8BE
+  */
+/*
+  https://kuler.adobe.com/#themeID/137458
+  BAE8E5 CCF4FF D9FFF2 BAE8CB CCFFD1
+  */
+@import "compass";
+@import "compass/css3/box-shadow";
+@import "../components/sass-bootstrap/lib/bootstrap";
+
+$orange: #ff530d;
+$baby-blue: #bdd4de;
+$light-grey: #efefef;
+$dark-blue: #2b3a42;
+
+$background-color: #efefef; //#FCFFF5; //#D9CB9E; //#F5E5C0;
+
+$heading-color: #2B3A42; //#3F5765; // #1E1E20; // #265573; // #386d73;
+$heading-font-family: 'Raleway', sans-serif;
+$heading-font-weight: 300;
+
+$font-family: 'Open Sans', sans-serif;
+$font-color: #3F5765; //#2A2C2B; //#386d73;
+$link-color: #265573;
+
+$navbar-bg-color: #2B3A42; //#193441; // #374140; // #097380; // #265573;
+$navbar-color: $background-color; //#F5E5C0; //#265573;
+$navbar-height: 50px;  // this is the default from bootstrap
+$navbar-border: solid 1px #FF530D; //#DC3522; //orange;
+
+$footer-height: 15em;
+
+$footer-bg-color: #2B3A42; //#81A68A;
+$footer-font-color: #BDD4DE; //$background-color; //#265573;
+$footer-border: $navbar-border;
+
+$block-header-background: #BDD4DE; //#f5f5f5;
+$block-header-border: solid 1px #FF530D;
+$block-header-padding: .3em .3em;
+
+
+$icon-color: #FF530D;
+
+@mixin block-header {
+    background-color: $block-header-background;
+    border: $block-header-border;
+    padding: $block-header-padding;
+    border-radius: 5px;    
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    //background-color: #FFFDD0;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: $font-family;
+    //padding-top: 3em; // make space for navbar
+}
+
+
+p  {
+    color: $font-color;    
+}
+
+a {
+    color: $link-color;
+}
+
+h1, h2, h3, h4, h5, legend {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    color: $heading-color;
+    margin-left: 0;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   //background:#ff0;
+   //padding:40px;
+}
+#content {
+    padding-top: $navbar-height;
+    padding-bottom: $footer-height;   /* Height of the footer */
+}
+
+#main-view {
+    padding-top: 2em;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:$footer-height;   /* Height of the footer */
+    
+    // everything above this line is part of the css sticky footer
+    border-top: $footer-border;
+    background-color: $footer-bg-color;
+    color: $footer-font-color;
+    //padding-top: 3em;
+
+    .row {
+        margin-top: 4em;
+    }
+    
+    a {
+        color: $footer-font-color;
+        display: block;
+    }
+
+    .copyright {
+        top: 0;
+        font-size: .9em;
+        //margin-top: 2em;
+        margin-right: 2em;
+        background-color: inherit;
+    }
+}
+
+/* .container { */
+/*     min-height: 100%; */
+/* } */
+
+.error {
+    color: red;
+}
+
+.navbar {
+    background-color: $navbar-bg-color;
+    color: $navbar-color;
+    border-bottom: $navbar-border;
+    //margin-bottom: 0;
+    
+    a, li > a { 
+        color: $navbar-color;
+    }
+
+    a:hover, li > a:hover { 
+        color: #FF530D;
+        //background-color: white;
+    }
+}
+
+.dropdown-menu {
+    border-bottom: $navbar-border;
+
+    a, li > a { 
+        color: $navbar-bg-color;
+    }
+
+    a:hover, li > a:hover {
+        color: red; //#FF530D;
+        background-color: white !important;
+        background-image: none; // undo bootstrap background gradient on hover
+    }
+}
+
+.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #FF530D;//#d5d5d5;
+}
+
+
+.fa {
+    color: $icon-color;
+}
+
+.main-page {
+
+    & > div {
+        //padding: 50px 200px;
+    }
+    
+    h4 {
+        margin: 20px 0 0 0;
+    }
+
+    .section1 {
+        //background-color: #d4d9b0; //#ffffec // #fcf6d9;
+        //background-color: #BDD4DE; //#9fbf8f; //#fff9df // #fcf6d9;
+        padding-bottom: 8em;
+    }
+
+    .features {
+        margin-top: 2em;
+        
+        .row {
+            margin-top: 2em;
+        }        
+
+        h4 { 
+            margin: 0;
+        }
+
+        i {
+            margin: 0;
+        }
+        
+    }
+    
+    .section2 {
+        padding: 5em 0;
+        /* padding-top: 3em; */
+        /* padding-bottom: 10em; */
+        background-color: #BDD4DE; //#9fbf8f; //#fff9df // #fcf6d9;
+    }   
+}
+
+#privacy-page {
+    padding-bottom: 3em;
+}
+
+#contact-page {
+    padding-bottom: 3em;
+}
+
+#faq-page {
+    padding-bottom: 3em;
+
+    h4 {
+        font-weight: bold;
+    }
+    
+    .question-block {
+        padding-top: .5em;
+    }
+}
+
+// add padding to acount for the navbar
+.show-menubar {
+    padding-top: 70px;
+}
+
+/* @media (max-width: 979px) { */
+/*   body { */
+/*     padding-top: 0px; */
+/*   } */
+/* } */
+
+.curious {
+    text-align: center;
+    a {
+        color: $orange;
+    }
+}
+
+.not-ready-warning {
+    background-color: $orange;
+    font-size: 90%;
+    text-align: center;
+    p {
+        color: $light-grey;
+    }
+}
+
+input {
+    background-color: $background-color;// !important;
+}
+
+#curious-page {
+    padding-bottom: 3em;
+    li {
+        padding-bottom: 1em;
+    }
+
+    .feature-title {
+        font-weight: bold;
+    }
+}
+
+
+.login-page {
+    //padding-top: $navbar-height;
+    //background-color: #d4d9b0;
+    padding-bottom: 3em;
+    
+    .not-ready-warning {
+        text-align: center;
+        font-size: 100%;
+        padding: 1em;   
+    }
+}
+
+.form-signin {
+    margin: 5em 0;
+    padding: 2em;
+    //background-color: #fff;
+    background-color: #BDD4DE; //$navbar-bg-color;
+    //border: 1px solid #e5e5e5;
+    border: $navbar-border;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    //margin-bottom: 10px;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+    //background-color: $background-color;
+}
+
+
+.logout-page {
+    padding: 5em 0;
+    p {
+        color: #FF530D;
+    }
+}
+
+
+#new-user-page {
+    //margin-top: $navbar-height;
+    margin-top: 2em;
+
+    /* form { */
+    /*     margin-top: 5em; */
+    /* } */
+    
+    .btn-default {
+        margin: 3em auto;        
+    }
+
+    .help-block {
+        margin-bottom: 3em;
+    }
+
+    .welcome { 
+        margin-top: 7em;
+        margin-bottom: 7em;
+    }
+}
+
+
+.search-page {
+    padding-bottom: 3em;
+}
+
+.search-box {
+    padding: 15px 15px;
+    margin-bottom: 25px;
+    background-color: #F5F5F5;
+    border: solid 1px #CCC;
+
+    form {
+        margin: 0;
+    }
+
+    .fa {
+        color: $font-color;
+    }
+
+}
+
+.list-group {
+    background-color: $background-color;
+    a { 
+        background-color: white;
+    }
+}
+
+
+/*.bauble-editor label + input {
+  margin-left: 10px;
+  }*/
+
+.block-header { 
+    @include block-header;
+}
+
+.bauble-editor {
+    
+    padding-bottom: 3em;
+
+    label + textarea {
+    /*margin-left: 10px;*/
+    }
+
+    .alert {
+        z-index: 100;
+        top: 50px;
+        position: absolute;
+        padding: 25px;
+    }
+
+    .editor-header {
+        @include block-header;
+        margin-bottom: 2em;
+
+        /* .header-title { */
+        /*     //padding-left: 1em; */
+        /* } */
+
+        .header-buttons {
+            text-align: right;
+        }
+    }
+
+    .editor-body {
+        margin: 25px 25px;
+        //margin-bottom: 25px;
+        height: 100%;
+
+        .tab-content {
+            margin: 35px;
+        }
+    }
+
+    .editor-section {
+        h5 {
+            background-color: #F5F5F5;
+            padding-left: 10px;
+            line-height: 2em;
+        }
+        // & > div {
+        //   margin-left: 25px;
+        // }
+    }
+
+    input[ui-date] {
+        width: 90px;  // same size as .input-small
+    }
+}
+
+.accordion-group {
+    margin-bottom: 10px;
+}
+
+.accordion-heading {
+    background-color: #f7f7f7;
+}
+
+.family-editor {
+
+    // .tab-content {
+    //   height: 200px;
+    // }
+
+    $label-width: 75px;
+    .control-label {
+        width: $label-width
+    }
+    .controls {
+        margin-left: $label-width + 25px;
+    }
+
+    .synonyms-box {
+        margin-top: 1em;
+    }
+}
+
+
+.genus-editor {
+
+}
+
+.taxon-editor {
+
+    $label-width: 75px;
+    .group1 .control-label {
+        width: $label-width
+    }
+    .group1 .controls {
+        margin-left: $label-width + 25px;
+    }
+
+    .infraspecific-container {
+
+        table {
+            margin-left: 25px;
+        }
+    }
+
+    .vernacular-name-container {
+        margin-bottom: 25px;
+
+        .contents {
+            margin-left: 25px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        table {
+            thead {
+                background-color: #eee;
+
+                td {
+                    border: solid 2px white;
+                    padding: 2px 5px;
+                }
+            }
+
+            tr {
+                // center the default checkbox
+                td:last-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .synonyms-box {
+
+        margin-top: 1.2em;
+
+        label {
+            font-weight: bold;
+        }
+
+        .contents {
+            margin-top: 1em;
+        }
+    }
+}
+
+
+.accession-editor {
+    $label-width: 100px;
+
+    .taxon-select {
+        width: 400px;
+    }
+
+    .source-select {
+        width: 400px;
+    }
+
+        /* .source-tab { */
+    /*     .source-select-box { */
+    /*         $label-width: 75px; */
+    /*         label { */
+    /*             width: $label-width; */
+    /*         } */
+    /*         .controls { */
+    /*             margin-left: $label-width + 10px; */
+    /*         } */
+    /*         .select2-container { */
+    /*             width: 50%; */
+    /*         } */
+    /*     } */
+
+    /*     // .locale-group input { */
+    /*     //   width: 50%; */
+    /*     // } */
+
+    /*     .long-lat-group { */
+    /*         .control-group { */
+    /*             display: inline-block; */
+    /*         } */
+
+    /*         input { */
+    /*             display: inline-block; */
+    /*         } */
+
+    /*         input[type="radio"] { */
+    /*             margin: 0 5px 0 10px; */
+    /*         } */
+    /*     } */
+    /* } */
+}
+
+.plant-editor {
+    .accession-select {
+        width: 400px;
+    }
+
+    .location-select {
+        width: 400px;
+    }
+}
+
+
+#report-designer {
+    margin-bottom: 5em;
+
+    .panel {
+        border: solid 1px #BDD4DE;//#FF530D;
+        
+        background-color: inherit;
+    }
+
+    .panel-heading {
+        //border-bottom: solid 1px $navbar-bg-color;
+        background-color: #BDD4DE; //#f5f5f5;
+    }
+
+    .action-icons {
+        // TODO: use font-family and bullet style to set the proper icon for the select
+        // when the list item has the .selected class
+
+        @include background-image(linear-gradient(left, $light-grey 85%, $baby-blue 100%));
+        padding-top: 1em;
+        padding-right: 1em;
+        list-style: none;
+        li {
+            margin-bottom: .5em;
+        }
+        i {
+            margin-right: .5em;
+        }
+        i:hover {
+            color: tint(#FF530D,40);
+        }
+        
+    }
+
+    .message {
+        @include block-header;
+        text-align: center;
+        margin-top: 1em;
+        padding: 1em;
+    }
+}
+
+.filters-row {
+}
+
+.filter-schema-menu {
+    width: 100%;
+    button {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.remove-button {
+    border: none;
+    box-shadow: none;
+    color: #8C281B;
+    
+    &:hover {
+        text-decoration: none;
+        color: red;
+    }
+}
+
+.domain-box {
+    //background-color: #519E41;
+}
+
+.filters-box {
+    //background-color: #85BF89;
+}
+
+.report-box {
+    //background-color: #9DDBB2;
+}
+
+#report-selector {
+    margin-bottom: 3em;
+}
+
+#report-create-button { 
+    margin-bottom: 5em;
+}
+
+
+.report-header {
+    @include block-header;
+    //margin-bottom: 2em;
+}
+
+.report-table-header {
+    .icon-container {
+        margin-left: 1em;
+    }
+}
+
+.report-table {
+
+}
+
+.report-table th  {
+    padding: 0 1em;
+}
+
+.report-table tr {
+
+}
+
+.report-table td {
+
+}
+
+.admin-page {
+    .tabbable {
+        margin-top: 25px
+    }
+}
+
+.admin-sysadmin-page {
+
+    .group-header {
+        height: 32px;
+
+        h4 {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        .search-query {
+            float: right
+        }
+    }
+
+    .grid {
+        //width: 200px;
+        height: 200px;
+        max-height: 400px;
+    }
+
+    .org-grid {
+        margin-bottom: 50px
+    }
+
+    
+}
+
+
+/*
+ * Re-add nested dropdown support to BS3
+ */ 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+
+.dropdown-submenu>a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+
+.dropdown-submenu:hover>a:after{
+    border-left-color:#ffffff;
+}
+
+.dropdown-submenu.pull-left{
+    float:none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+
+// fixes for select2
+.select2-container {
+    padding-left: 0px;
+}
+
+.select2-choice {
+    height: 34px !important;  // same height as .form-control
+}

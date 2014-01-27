@@ -1,0 +1,5 @@
+name: Bauble
+markdown: redcarpet
+pygments: true
+gems:
+- jekyll-compass
