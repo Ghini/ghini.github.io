@@ -82,6 +82,16 @@ h1, h2, h3, h4, h5, legend {
     font-family: 'Open Sans', sans-serif;
 }
 
+#main-content {
+    padding: 2em 0 4em 0;
+}
+
+#contact-form label {
+    //font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #2b3a42;
+}
+
 #main-view {
     padding-top: 2em;
 }
@@ -211,9 +221,6 @@ h1, h2, h3, h4, h5, legend {
     padding-bottom: 3em;
 }
 
-#contact-page {
-    padding-bottom: 3em;
-}
 
 #faq-page {
     padding-bottom: 3em;
@@ -271,10 +278,6 @@ input {
     #curious-page .feature-title {
         font-weight: bold;
     }
-
-
-
-
 
 /*
  * Re-add nested dropdown support to BS3

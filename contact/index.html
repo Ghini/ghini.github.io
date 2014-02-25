@@ -2,38 +2,37 @@
 layout: main
 title: Bauble - Contact Us
 ---
-<div id="contact-page" class="container" ng-controller="ContactCtrl">
+<div class="container">
 
-  <div ng-show="success">
-    <h3>Thanks for contacting us!</h3>
-    <p>We'll get back to you shortly</p>
-  </div>
+  <h2>Contact Us</h2>
+  <p>Drop us a note here at Bauble headquarters and we'll get back you as soon as we can.</p>
 
-  <div ng-hide="success" class="row">
-    <h1>Contact Us</h1>
-    <div class="col-md-6">
-      <form role="form">
-        <div class="form-group">
-          <label for="inputName">Name</label>
-          <input type="text" class="form-control" id="inputName" ng-model="data.name"
-                 placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <label for="inputFrom">Email address</label>
-          <input type="email" class="form-control" id="inputFrom" ng-model="data.from"
-                 placeholder="someone@somewhere.com">
-        </div>
-        <div class="form-group">
-          <label for="inputMessage">Message</label>
-          <textarea type="password" class="form-control" rows="8" id="inputMessage"
-                    ng-model="data.message"></textarea>
-        </div>
 
-        <button type="submit" class="btn btn-default" ng-click="submit()">Submit</button>
-        <span ng-show="error">Error: The message cold not be sent.  Please try
-        again later.</span>
-        </div>
-      </form>
-    </div> <!-- .row -->
-  </div> <!-- .col -->
-</div> <!-- .contact-page -->
+  <form id="contact-form" name="form1" class="wufoo topLabel page" accept-charset="UTF-8"
+        autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+        action="https://bauble.wufoo.com/forms/z1bt23qs03xuyrv/#public">
+
+    <div class="form-group">
+      <label for="Field6">Name</label>
+      <input type="name" class="form-control" id="exampleInputName1" placeholder="Enter name"
+             id="Field6" name="Field6" >
+    </div>
+
+    <div class="form-group">
+      <label for="Field3">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"
+             id="Field3" name="Field3">
+    </div>
+
+    <div class="form-group">
+      <label for="Field4">Message</label>
+      <textarea class="form-control" id="Field4" name="Field4" rows="3" spellcheck="true"></textarea>
+    </div>
+
+    <input type="hidden" id="idstamp" name="idstamp"
+           value="077y4RLomBH/O4dw/FMeFxQd3X1FxAYMOhOVj+h/s/k=" />
+
+    <button type="submit" id="saveForm" name="saveForm" class="btn btn-primary">Send</button>
+
+  </form>
+</div>
