@@ -60,6 +60,7 @@ html, body {
 }
 
 p  {
+    font-size: 105%;
     color: #3F5765;
 }
 
@@ -204,11 +205,6 @@ h1, h2, h3, h4, h5, legend {
     }
 
 
-// add padding to acount for the navbar
-.show-menubar {
-    padding-top: 70px;
-}
-
 /* @media (max-width: 979px) { */
 /*   body { */
 /*     padding-top: 0px; */
@@ -232,10 +228,6 @@ h1, h2, h3, h4, h5, legend {
 .not-ready-warning p {
     color: #efefef;
    
-}
-
-input {
-    background-color: #efefef;// !important;
 }
 
 #curious-page {
