@@ -1,0 +1,34 @@
+---
+layout: post
+title: A New Dawn
+---
+
+Thanks for tuning in to the first blog post for Bauble.  For those of you that
+don't know Bauble is a new web app for managing plant collections.  It is
+primarily for botanic gardens and arboreta to manage their living collections
+using modern curatorial practices.
+
+Bauble was started as an open source project in 2004 at
+[Belize Botanic Gardens](http://belizebotanic.org) and was freely available to
+anyone who wanted to use it.  The original version of Bauble, or Bauble
+Classic, was a desktop application that you installed on your computer.  
+
+The fruit hasn't fallen from the tree. Bauble is still an open source
+project but it has moved on from it's humble beginnings and is now an advanced,
+modern web app that allows you to host your plant records in the cloud.
+
+Here at Bauble.io we are offering a hosted version of Bauble for your
+convenience.  The infrastructure for your plant records require continous
+backups, servers, IT staff, support and a whole list of headaches.  Garden
+staff should be concerned with managing the plant collections and landscapes
+and not their IT infrastructure.
+
+
+
+
+
+
+
+
+
+

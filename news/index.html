@@ -1,14 +1,18 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: main
+title: Bauble - News
+name: news
 ---
+{% for post in site.posts %}
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <p>Does this work?</p>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2" >
+    <div class="post-block">
+      <h2 class="post-title">{{ post.title }}</h2>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      {{ post.content }}
+    </div>
+  </div>
 </div>
+
+{% endfor %}
