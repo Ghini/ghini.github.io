@@ -13,7 +13,7 @@ Bauble was started as an open source project in 2004 at
 anyone who wanted to use it.  The original version of Bauble, or Bauble
 Classic, was a desktop application that you installed on your computer.  
 
-The fruit hasn't fallen from the tree. Bauble is still an open source
+The fruit hasn't fallen farm from the tree. Bauble is still an open source
 project but it has moved on from it's humble beginnings and is now an advanced,
 modern web app that allows you to host your plant records in the cloud.
 
