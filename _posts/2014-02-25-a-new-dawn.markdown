@@ -19,10 +19,10 @@ humble beginnings and is now an advanced, modern web app that allows you to
 host your plant records in the cloud.
 
 Here at Bauble.io we are offering a hosted version of Bauble for your
-convenience.  The infrastructure to your plant records require continous
-maintenance, backups, servers, IT staff, support and a whole list of headaches.
-By using Bauble. you can spend time managing your collection and landscapes and
-not your IT infrastructure.
+convenience.  That means you don't need to worry about the continous
+maintenance, backups, servers, IT staff, support and a whole list of headaches
+that comes with managing your plant records.  By using Bauble you can spend
+time managing your collection and landscapes and not your IT infrastructure.
 
 Bauble.io isn't quite ready for prime time but we're shooting for our first
 release in the beginning of Summer 2014.
