@@ -1,6 +1,3 @@
-
-
-// color theme : https://kuler.adobe.com/Fall-Grass-color-theme-2487072/
 /*
   https://kuler.adobe.com/#themeID/7245;
   #607056 #519E41 #85BF89 #9DDBB2 #BFE8BE
@@ -47,16 +44,20 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 html, body {
     background-color: #efefef;
     color: #3F5765;
     font-family: 'Open Sans', sans-serif;
-    
+}
+
+body > .container {
+  padding: 60px 15px 0;
 }
 
 p  {
@@ -66,7 +67,7 @@ p  {
 
 a {
     color: #ff530d;
-    //color: #265573;
+    /* color: #265573; */
 }
 
 h1, h2, h3, h4, h5, legend {
@@ -82,12 +83,15 @@ h1, h2, h3, h4, h5, legend {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 120px;
+  height: 100px;
   /* everything above here is for the sticky footer layout */
 
-  width: 100%;
   background-color: #2b3a42;
   border-top: solid 1px #FF530D;
+}
+
+#footer .container {
+    padding-top: 10px;
 }
 
 #footer .row {
@@ -95,7 +99,6 @@ h1, h2, h3, h4, h5, legend {
     /* everything above here is for the sticky footer layout */
     
     background-color: #2b3a42;
-    padding-top: 2em;
 }
 
 #footer a {
@@ -105,15 +108,8 @@ h1, h2, h3, h4, h5, legend {
 }
 
 
-#header {
-    //background:#ff0;
-    //padding:40px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 #content {
-    padding-top: 100px;
-    padding-bottom: 8em;   /* Height of the footer */
+    padding-top: 100px;  /* Height of the footer */
     background-color: #efefef;
     font-family: 'Open Sans', sans-serif;
 } 
@@ -127,36 +123,48 @@ h1, h2, h3, h4, h5, legend {
     background-color: #2B3A42;
     color: #efefef;
     border-bottom: solid 1px #FF530D;
-    //margin-bottom: 0;
 }
-.navbar a, .navbar li > a { 
+
+/* .navbar a,  */
+/* .navbar > li > a {  */
+
+/* use id selector to increase specificity so we can override bootstrap */
+
+/* #main-nav li > a { */
+#main-nav li > a, #main-nav a {
     color: #efefef;
 }
 
-.navbar a:hover, .navbar li > a:hover { 
-    color: #FF530D;
-    //background-color: white;
+/* .navbar a:hover, .navbar li > a:hover {  */
+#main-nav a:hover, #main-nav li > a:hover {
+    color: #ff530d;
+    background-color: #2b3a42; /* dark blue */
 }
 
 .dropdown-menu {
     border-bottom: solid 1px #FF530D;
 }
 
-.dropdown-menu   a, li > a { 
+.dropdown-menu a, li > a { 
     color: #2B3A42;
 }
 
-.dropdown-menu a:hover, li > a:hover {
-    color: red; //#FF530D;
+.dropdown-menu a:hover, .dropdown-menu li > a:hover {
+    color: #FF530D;
     background-color: white !important;
-    background-image: none; // undo bootstrap background gradient on hover
+    background-image: none; /* undo bootstrap background gradient on hover */
 }
 
 
-.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus {
+/*
+.navbar-nav > .open > a, 
+.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a:focus {
+    color: #FF530D;
     color: #555;
     background-color: #FF530D;//#d5d5d5;
 }
+*/
 
 
 .fa {
