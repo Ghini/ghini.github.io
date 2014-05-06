@@ -26,15 +26,5 @@ time managing your collection and landscapes and not your IT infrastructure.
 
 Bauble.io isn't quite ready for prime time but we're shooting for our first
 release in the beginning of Summer 2014.
-[Contact Us](htttp://bauble.io/contact/) if you would like more information
+[Contact Us](http://bauble.io/contact/) if you would like more information
 or to get notified when you can start using Bauble.
-
-
-
-
-
-
-
-
-
-
