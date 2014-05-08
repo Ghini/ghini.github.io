@@ -61,7 +61,7 @@ body > .container {
 }
 
 p  {
-    font-size: 105%;
+    //font-size: 100%;
     color: #3F5765;
 }
 
@@ -71,8 +71,9 @@ a {
 }
 
 h1, h2, h3, h4, h5, legend {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
     color: #2B3A42;
     margin-left: 0;
 }
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, legend {
 #footer .row {
     width: 100%;
     /* everything above here is for the sticky footer layout */
-    
+
     background-color: #2b3a42;
 }
 
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, legend {
     padding-top: 100px;  /* Height of the footer */
     background-color: #efefef;
     font-family: 'Open Sans', sans-serif;
-} 
+}
 
 
 .error {
@@ -145,7 +146,7 @@ h1, h2, h3, h4, h5, legend {
     border-bottom: solid 1px #FF530D;
 }
 
-.dropdown-menu a, li > a { 
+.dropdown-menu a, li > a {
     color: #2B3A42;
 }
 
@@ -157,8 +158,8 @@ h1, h2, h3, h4, h5, legend {
 
 
 /*
-.navbar-nav > .open > a, 
-.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
     color: #FF530D;
     color: #555;
@@ -181,7 +182,7 @@ h1, h2, h3, h4, h5, legend {
     margin-top: 4em;
     font-size: 300%;
     font-weight: bold;
-    
+
 }
 
 #index-page .section1 {
@@ -194,7 +195,7 @@ h1, h2, h3, h4, h5, legend {
     margin-top: 4em;
 }
 
-  
+
 
 #privacy-page {
     padding-bottom: 3em;
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, legend {
     #faq-page h4 {
         font-weight: bold;
     }
-    
+
     #faq-page .question-block {
         padding-top: .5em;
     }
@@ -235,7 +236,7 @@ h1, h2, h3, h4, h5, legend {
 
 .not-ready-warning p {
     color: #efefef;
-   
+
 }
 
 #curious-page {
@@ -251,7 +252,7 @@ h1, h2, h3, h4, h5, legend {
 
 /*
  * Re-add nested dropdown support to BS3
- */ 
+ */
 .dropdown-submenu {
     position: relative;
 }
