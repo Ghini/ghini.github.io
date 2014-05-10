@@ -71,7 +71,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, legend {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #2B3A42;
@@ -124,6 +124,8 @@ h1, h2, h3, h4, h5, legend {
     background-color: #2B3A42;
     color: #efefef;
     border-bottom: solid 1px #FF530D;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 /* .navbar a,  */
