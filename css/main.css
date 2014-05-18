@@ -80,10 +80,11 @@ h1, h2, h3, h4, h5, legend {
 
 @media only screen and (min-width : 768px) {
     #footer {
-        // for some reason setting the height on mobile chops off the bottom of the footer
-        // or at least the last column
+        /*
+         * for some reason setting the height on mobile chops off the bottom of the footer
+         * or at least the last column
+         */
         height: 1200px;
-
     }
 }
 
