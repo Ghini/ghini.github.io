@@ -45,19 +45,18 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
-    margin-bottom: 100px;
-}
-
 html, body {
     background-color: #efefef;
     color: #3F5765;
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    box-shadow:  0px 5px 20px 20px rgba(50, 50, 50, 0.75);
+}
+
 body > .container {
-  padding: 60px 15px 0;
+    padding-top: 50px;
 }
 
 p  {
@@ -80,39 +79,52 @@ h1, h2, h3, h4, h5, legend {
 
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 100px;
-  /* everything above here is for the sticky footer layout */
-
-  background-color: #2b3a42;
-  border-top: solid 1px #FF530D;
-}
-
-#footer .container {
-    padding-top: 10px;
-}
-
-#footer .row {
+    height: 1200px;
+    padding-top: 1050px;
     width: 100%;
-    /* everything above here is for the sticky footer layout */
+    //background: #000;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(50, 50, 50, 1);
+}
 
-    background-color: #2b3a42;
+
+#footer p {
+    color: #aaa;
 }
 
 #footer a {
-    color: #BDD4DE;
+    color: #eee;
     display: block;
-    font-size: 90%;
+    font-size: 95%;
+    padding: .3em;
+}
+
+#footer .copyright {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: .9em;
+    margin-right: 2em;
+    background-color: inherit;
 }
 
 
 #content {
-    padding-top: 100px;  /* Height of the footer */
-    background-color: #efefef;
-    font-family: 'Open Sans', sans-serif;
+    //padding-top: 100px;  /* Height of the footer */
+    //background-color: #efefef;
+    //font-family: 'Open Sans', sans-serif;
+
+    position: relative;
+    z-index: 100;
+    //background-color: $light-grey !important;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    padding-top: 3em;
+    overflow: hidden;
+    height: 100%;
+    min-height: 700px;
 }
 
 
