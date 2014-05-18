@@ -78,17 +78,23 @@ h1, h2, h3, h4, h5, legend {
 }
 
 
+@media only screen and (min-width : 768px) {
+    #footer {
+        // for some reason setting the height on mobile chops off the bottom of the footer
+        // or at least the last column
+        height: 1200px;
+
+    }
+}
+
 #footer {
-    height: 1200px;
     padding-top: 1050px;
     width: 100%;
-    //background: #000;
     position: fixed;
     bottom: 0;
     z-index: -1;
     background-color: rgba(50, 50, 50, 1);
 }
-
 
 #footer p {
     color: #aaa;
@@ -120,11 +126,17 @@ h1, h2, h3, h4, h5, legend {
     z-index: 100;
     //background-color: $light-grey !important;
     margin-bottom: 200px;
-    margin-top: 50px;
+
     padding-top: 3em;
     overflow: hidden;
     height: 100%;
     min-height: 700px;
+}
+
+@media only screen and (min-width : 768px) {
+    #content {
+        margin-top: 50px;
+    }
 }
 
 
@@ -191,25 +203,25 @@ h1, h2, h3, h4, h5, legend {
     margin-top: 20px;
 }
 
+@media only screen and (min-width : 768px) {
+    #index-page h1 {
+        margin-top: 30%;
+    }
+}
 
 #index-page h1 {
-    margin-top: 4em;
     font-size: 300%;
     font-weight: bold;
-
 }
 
 #index-page .section1 {
     height: 100%;
     min-height: 100%;
-    //margin-top: 5em;
 }
 
 #index-page .description {
     margin-top: 4em;
 }
-
-
 
 #privacy-page {
     padding-bottom: 3em;
