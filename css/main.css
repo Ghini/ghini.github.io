@@ -153,6 +153,18 @@ h1, h2, h3, h4, h5, legend {
     font-weight: 400;
 }
 
+.navbar-toggle {
+    border: solid 2px white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ff753d;
+}
+
+.navbar-toggle .icon-bar {
+    color: white;
+}
+
 /* .navbar a,  */
 /* .navbar > li > a {  */
 
@@ -348,4 +360,23 @@ h1, h2, h3, h4, h5, legend {
 
 .selected-page {
     color: #ff530d !important;;
+}
+
+
+#signup-now {
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 10em;
+    //clear: both;
+}
+
+#signup-now a {
+    width: 100%;
+    font-size: 200%;
+    margin: 6em 0;
+    text-align: center;
+    padding: 1.5em 2em;
+    background-color: #ff753d;
+    color: white;
+    border-radius: 5px;
 }
