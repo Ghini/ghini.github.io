@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Searching &mdash; Bauble 1.0 documentation</title>
+  <title>Models &mdash; Bauble 1.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
 
   
     <link rel="top" title="Bauble 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Creating and editing records" href="edit_records.html"/>
-        <link rel="prev" title="Getting Started" href="getting_started.html"/> 
+        <link rel="up" title="REST API" href="api.html"/>
+        <link rel="prev" title="Routes" href="api-routes.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -63,10 +63,10 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#create-a-new-account">Create a new account</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Searching</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#search-by-value">Search By Value</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#domain-queries">Domain queries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#expressions">Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="searching.html">Searching</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="searching.html#search-by-value">Search By Value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching.html#domain-queries">Domain queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching.html#expressions">Expressions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="edit_records.html">Creating and editing records</a><ul>
@@ -80,9 +80,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reports.html">Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">REST API</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">REST API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="api-routes.html">Routes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-models.html">Models</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Models</a></li>
 </ul>
 </li>
 </ul>
@@ -108,10 +108,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Searching</li>
+          <li><a href="api.html">REST API</a> &raquo;</li>
+      
+    <li>Models</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="_sources/searching.txt" rel="nofollow"> View page source</a>
+          <a href="_sources/api-models.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -119,49 +121,56 @@
 </div>
           <div role="main">
             
-  <div class="section" id="searching">
-<h1>Searching<a class="headerlink" href="#searching" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last"><strong>The documentation is a work in progress</strong>.</p>
+  <div class="section" id="models">
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="user">
+<span id="model-user"></span><h2>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique user id.</p>
+<p><strong>email</strong>: The unique user id.</p>
+<hr class="docutils" />
 </div>
-<p>Bauble enables you to search your plant records for generic terms or use more
-specific queries to find exactly what you&#8217;re looking for.  Three types of
-search in Bauble are:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Search by value</li>
-<li>Domain queries</li>
-<li>Expressions</li>
-</ul>
-</div></blockquote>
-<p>These three types of searches are in order of simplicity and forgiving to detailed and complex.</p>
-<div class="section" id="search-by-value">
-<h2>Search By Value<a class="headerlink" href="#search-by-value" title="Permalink to this headline">¶</a></h2>
-<p>Search by value allows you to enter a list of value to match the most common
-fields in the database.  For example if you enter <strong>Max</strong> it will match all the
-families, genera and taxa that match the name <strong>Max</strong>.</p>
-<p>These are the simplest forms of search and can return large result sets that
-can match across multiple types of records.  One search might returns lists of
-locations, families and accessions.</p>
+<div class="section" id="organization">
+<span id="model-organization"></span><h2>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique organization id.</p>
+<p><strong>name</strong>: The full name of the organization.</p>
+<p><strong>short_name</strong>: A short name or acronym for the organization.</p>
+<p><strong>address</strong>:</p>
+<p><strong>city</strong>:</p>
+<p><strong>state</strong>:</p>
+<p><strong>zip</strong>:</p>
+<hr class="docutils" />
 </div>
-<div class="section" id="domain-queries">
-<h2>Domain queries<a class="headerlink" href="#domain-queries" title="Permalink to this headline">¶</a></h2>
-<p>Domain queries search a specific type of record.  The are of the form ** &lt;domain&gt; = &lt;value&gt;** where &lt;domain&gt; is a search domain like family or accessions and value is the value that you want to search for withing that domain.</p>
-<p>For example if you only want to search families for a particular string you
-might enter <strong>family = Max</strong> to match only families that contain the string
-<strong>Max</strong>.</p>
+<div class="section" id="family">
+<span id="model-family"></span><h2>Family<a class="headerlink" href="#family" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique family id.</p>
+<p><strong>family</strong>: The family name.</p>
+<p><strong>qualifer</strong>: The qualifer.</p>
+<p><strong>str</strong>: The full string of the family.</p>
+<hr class="docutils" />
 </div>
-<div class="section" id="expressions">
-<h2>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h2>
-<p>Expressions are the most powerful types of search but are also the most
-difficult to master.  Expression search have their own query language and like
-domain queries return results within a specific search domain.  The main
-difference between domain queries and expressions is that expressions allow you
-so search for more specific results in fields within a domain and even children
-of search domain.</p>
-<p>An example of a search expression that returns all the accessions in the genus <em>Maxillaria</em> or <em>Enyclia</em> would be:</p>
-<p>accessions where species.genus.genus = &#8220;Maxillaria&#8221; or species.genus.genus = &#8220;Encyclia&#8221;</p>
+<div class="section" id="genus">
+<span id="model-genus"></span><h2>Genus<a class="headerlink" href="#genus" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique genus id.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="taxon">
+<span id="model-taxon"></span><h2>Taxon<a class="headerlink" href="#taxon" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique taxon id.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="accession">
+<span id="model-accession"></span><h2>Accession<a class="headerlink" href="#accession" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique accession id.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="plant">
+<span id="model-plant"></span><h2>Plant<a class="headerlink" href="#plant" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique plant id.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="location">
+<span id="model-location"></span><h2>Location<a class="headerlink" href="#location" title="Permalink to this headline">¶</a></h2>
+<p><strong>id</strong>: The unique location id.</p>
 </div>
 </div>
 
@@ -171,10 +180,8 @@ of search domain.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="edit_records.html" class="btn btn-neutral float-right" title="Creating and editing records"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="getting_started.html" class="btn btn-neutral" title="Getting Started"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="api-routes.html" class="btn btn-neutral" title="Routes"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

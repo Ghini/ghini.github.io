@@ -1,7 +1,7 @@
 Searching
 =========
 
-** This section is a work in progress **
+.. warning:: **The documentation is a work in progress**.
 
 Bauble enables you to search your plant records for generic terms or use more
 specific queries to find exactly what you're looking for.  Three types of
@@ -11,7 +11,7 @@ search in Bauble are:
   - Domain queries
   - Expressions
 
-These three types of search are in order of simple and forgiving to detailed and complex.
+These three types of searches are in order of simplicity and forgiving to detailed and complex.
 
 Search By Value
 ---------------
