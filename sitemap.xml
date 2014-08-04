@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>/2014/08/04/are-you-using.html</loc>
+    <lastmod>2014-08-04T00:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/2014/05/08/public-beta.html</loc>
     <lastmod>2014-05-08T00:00:00-04:00</lastmod>
     <priority>0.8</priority>
@@ -17,56 +23,56 @@
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/classic/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/contact/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/curious/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/faq/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/features/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>/news/</loc>
-    <lastmod>2014-06-15T22:09:48-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
