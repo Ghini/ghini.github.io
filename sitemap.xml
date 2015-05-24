@@ -79,15 +79,10 @@
   
   <url>
     <loc>/privacy/</loc>
-    <lastmod>2014-06-13T22:38:22-04:00</lastmod>
+    <lastmod>2014-08-04T08:09:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <url>
-    <loc>/docs/</loc>
-    <lastmod>2014-06-07T21:30:27-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  
+  
 </urlset>
