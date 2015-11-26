@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Building the source &mdash; Bauble v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Bauble v1.0 documentation" href="index.html" />
+    <link rel="next" title="Extending Bauble with Plugins" href="extending.html" />
+    <link rel="prev" title="Downloading the source" href="devdl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="extending.html" title="Extending Bauble with Plugins"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="devdl.html" title="Downloading the source"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Bauble v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="building-the-source">
+<h1>Building the source<a class="headerlink" href="#building-the-source" title="Permalink to this headline">¶</a></h1>
+<p>In order to build Bauble from the source code you will first need to
+download the code.  For more information about download the Bauble
+source go to <a class="reference external" href="devdl.html"><em>Downloading the source</em></a>.</p>
+<div class="section" id="building-on-windows">
+<h2>Building on Windows<a class="headerlink" href="#building-on-windows" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install Python.  Python has mostly been devloped and tested using
+Python 2.6.  It may work with other 2.x versions of Python but will
+definitely not work with Python 3.0 and greater.  You can download
+Python 2.6.2 from <a class="reference external" href="http://www.python.org/download/releases/2.6.2/">python.org</a>.</p>
+</li>
+<li><p class="first">Install GTK+. The easiest way to install GTK+ is to download the
+latest runtime packages from <a class="reference external" href="http://gtk-win.sourceforge.net/home/index.php/Downloads">gtk-win.sourceforge.net</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The gtk-win package currently doesn&#8217;t support SVG which can</p>
+</div>
+<p>cause a problem with Bauble.</p>
+</li>
+<li><p class="first">Install the Python GTK+ packages.  These installers have to be
+downloaded and run individually.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://ftp.gnome.org/pub/GNOME/binaries/win32/pycairo/">PyCairo</a></li>
+<li><a class="reference external" href="http://ftp.gnome.org/pub/GNOME/binaries/win32/pygobject/">PyGObject</a></li>
+<li><a class="reference external" href="http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/">PyGTK</a></li>
+</ul>
+</li>
+<li><p class="first">Compile Bauble.  From the command line go to the directory where the
+bauble source code is and type the following:</p>
+<div class="highlight-python"><pre>python setup.py py2exe</pre>
+</div>
+</li>
+<li><p class="first">Run Bauble.  To run the compiled executable run:</p>
+<div class="highlight-python"><pre>/dist/bauble.exe</pre>
+</div>
+</li>
+<li><p class="first">To optionally build an NSIS installer package you must install NSIS
+from <a class="reference external" href="http://nsis.sourceforge.net/Download">nsis.sourceforge.net</a>.  After installing NSIS
+right click on <tt class="docutils literal"><span class="pre">./scripts/build.nsi</span></tt> in Explorer and select
+<em>Compile NSIS Script</em>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="building-on-linux">
+<h2>Building on Linux<a class="headerlink" href="#building-on-linux" title="Permalink to this headline">¶</a></h2>
+<p>... To be done</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Building the source</a><ul>
+<li><a class="reference external" href="#building-on-windows">Building on Windows</a></li>
+<li><a class="reference external" href="#building-on-linux">Building on Linux</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="devdl.html"
+                                  title="previous chapter">Downloading the source</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="extending.html"
+                                  title="next chapter">Extending Bauble with Plugins</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/building.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="extending.html" title="Extending Bauble with Plugins"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="devdl.html" title="Downloading the source"
+             >previous</a> |</li>
+        <li><a href="index.html">Bauble v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008,2009.
+      Last updated on Aug 29, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+  </body>
+</html>

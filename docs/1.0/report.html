@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Generating reports &mdash; Bauble v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Bauble v1.0 documentation" href="index.html" />
+    <link rel="next" title="Importing and Exporting Data" href="imex.html" />
+    <link rel="prev" title="Tagging" href="tagging.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="imex.html" title="Importing and Exporting Data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tagging.html" title="Tagging"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Bauble v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="generating-reports">
+<h1>Generating reports<a class="headerlink" href="#generating-reports" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-the-mako-report-formatter">
+<h2>Using the Mako Report Formatter<a class="headerlink" href="#using-the-mako-report-formatter" title="Permalink to this headline">¶</a></h2>
+<p>The Mako report formatter uses the Mako template language for
+generating reports. More information about Mako and it&#8217;s language can
+be found at <a class="reference external" href="http://www.makotemplates.org">makotemplates.org</a>.</p>
+<p>The Mako templating system should already be installed on your
+computerif Bauble is installed.</p>
+<p>Creating reports with Mako is similar in the way that you would create
+a web page from a template.  It is much simpler than the XSL
+Formatter(see below) and should be relatively easy to create template
+for anyone with a little but of programming experience.</p>
+<p>The template generator will use the same file extension as the
+template which should indicate the type of output the template with
+create.  For example, to generate an HTML page from your template you
+should name the template something like <cite>report.html</cite>.  If the template
+will generate a comma seperated value file you should name the
+template <cite>report.csv</cite>.</p>
+<p>The template will receive a variable called <cite>values</cite> which will
+contain the list of values in the current search.</p>
+</div>
+<div class="section" id="using-the-xsl-report-formatter">
+<h2>Using the XSL Report Formatter<a class="headerlink" href="#using-the-xsl-report-formatter" title="Permalink to this headline">¶</a></h2>
+<p>The XSL report formatter requires an XSL to PDF renderer to
+convert the data to a PDF file. Apache FOP is is a free and
+open-source XSL-&gt;PDF renderer and is recommended.</p>
+<p>If using Linux, Apache FOP should be installable using your package
+manager.  On Debian/Ubuntu it is installable as <tt class="docutils literal"><span class="pre">fop</span></tt> in Synaptic or
+using the following command:</p>
+<div class="highlight-python"><pre>apt-get install fop</pre>
+</div>
+<div class="section" id="installing-apache-fop-on-windows">
+<h3>Installing Apache FOP on Windows<a class="headerlink" href="#installing-apache-fop-on-windows" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download the latest Apache FOP.  The current version when this was
+written is 0.95 and can be downloaded <a class="reference external" href="http://www.apache.org/dist/xmlgraphics/fop/binaries/fop-0.95-bin.zip">here</a>.</li>
+<li>Extract the FOP archive to the C drive, i.e. C:</li>
+<li>Add the directory where you extracted FOP to the PATH environment
+variable.  If you extract FOP to C:add c:fop-0.95 to the path.
+For more information about setting environment variables and the
+PATH in Windows XP go <a class="reference external" href="http://vlaurie.com/computers2/Articles/environment.htm">here</a>.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Generating reports</a><ul>
+<li><a class="reference external" href="#using-the-mako-report-formatter">Using the Mako Report Formatter</a></li>
+<li><a class="reference external" href="#using-the-xsl-report-formatter">Using the XSL Report Formatter</a><ul>
+<li><a class="reference external" href="#installing-apache-fop-on-windows">Installing Apache FOP on Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="tagging.html"
+                                  title="previous chapter">Tagging</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="imex.html"
+                                  title="next chapter">Importing and Exporting Data</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/report.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imex.html" title="Importing and Exporting Data"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tagging.html" title="Tagging"
+             >previous</a> |</li>
+        <li><a href="index.html">Bauble v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008,2009.
+      Last updated on Aug 29, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+  </body>
+</html>
