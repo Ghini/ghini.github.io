@@ -53,39 +53,12 @@
 
     <div id="content">
 
-      <div class="note">
-	<p>
-	  Bauble is developed by one person with
-	  very limited time.  As
-	  much as I would like Bauble to be useful to as many people and
-	  institutions as possible it's difficult to know all the
-	  scenarios that folks might be testing or trying out Bauble. We
-	  use it at Belize Botanic Gardens and it works for us and I
-	  develop features as we need them.
-	</p>
-	<p>
-	  If you try or use Bauble then please let me know how it works and
-	  what problems you have with the software. Be as specific as
-	  possible.  If you want Bauble to continue improving please consider
-	  donating to <a href="http://www.belizebotanic.org">Belize Botanic
-	    Gardens</a> so that I might be able to spend more time
-	  on developing the software. See the bottom of this page for contact
-	  information.
-	</p>
-      </div>
-
-      <h1>News</h1>
-      <p>
-	Read the <a href="http://bauble-news.blogspot.com">news</a> to see what's been
-	happening lately.
-      </p>
-
       <h1>About Bauble</h1>
       <p>
-	Bauble is a software application to help you (yes you) manage a
-	collection of botanical specimens. It is intended
-	to be used by botanic gardens, herbaria, arboreta, etc. to
-	manage their collection information. It is a
+	Bauble is a software application to help you (whoever you are)
+	manage a collection of botanical specimens. It is intended to be
+	used (and it is indeed used) by botanic gardens, herbaria, arboreta,
+	etc. to manage their collection information. It is a
 	<a href="http://opensource.org">open</a>,
 	<a href="http://www.fsf.org">free</a>,
 	cross-platform alternative to BG-Base and similiar software.
@@ -114,30 +87,32 @@
 	  This in no way affects the data you manage with Bauble.
 	</li>
 	<li>
-	  Bauble is cross-platform. Bauble supports both Linux and
-	  Windows and could easily be ported to other platforms if
-	  there was interest.
+	  Bauble is cross-platform. Bauble supports both Linux and Windows
+	  and has been successfully ported to other platforms whenever there
+	  was interest.
 	</li>
 	<li>
 	  Bauble can use different database backends and is tested against
-	  <a href="http://www.sqlite.org">SQLite</a> and
-	  <a href="http://www.postgresql.org"> PostgreSQL</A>.
+	  <a href="http://www.sqlite.org">SQLite</a>,
+	  <a href="http://www.postgresql.org">PostgreSQL</a>,
+	  <a href="http://www.mariadb.org">MySQL/MariaDB</a>.
 	</li>
 	<li>
 	  Bauble can generate reports through an
 	  <a href="http://www.w3.org/TR/xsl/">XSL</a> formatter backend.
-	  There is no fancy report designer but there is an interface
-	  that allows you to pass the results of a search through an
-	  XSL formatter. This allows you to layout your data any way
-	  you wish and save it in a just about any format you can
-	  imagine including PDF, XML, or HTML.  Hopefully we'll get something
-	  a but more user(i.e. non-techy) friendly in the future.
+	  There is no fancy report designer but there is an interface that
+	  allows you to pass the results of a search through an XSL
+	  formatter and the extremely flexible Mako formatter. This allows
+	  you to layout your data any way you wish and save it in a just
+	  about any format you can imagine including PDF, XML, or HTML.
+	  Hopefully we'll get something a bit more user(i.e. non-techy)
+	  friendly in the future.
 	</li>
 	<li>
 	  Bauble can export data in CSV or Access to Biological Collection
-	  Data (ABCD) format. In the future we hope to
-	  support other standard formats such as DarwinCore, ITF2, BioCASE,
-	  TAPIR, etc.
+	  Data (ABCD) format. We intend to support other standard formats
+	  such as DarwinCore, ITF2, BioCASE, TAPIR, etc., as soon as time
+	  and money becomes available.
 	</li>
 	<li>
 	  Bauble supports tagging.  You can tag any arbitrary data stored in
@@ -152,94 +127,24 @@
 
       <h1>Documentation</h1>
       <p>
-	The documentation for Bauble 1.0 can be found at <a
-	href="./docs/1.0/">docs/1.0</a>.
-
+	The <a href="http://bauble.readthedocs.org/">current
+	documentation</a> for Bauble is hosted
+	at <a href="http://readthedocs.org/">readthedocs</a>.
+      </p>
+      <p>
 	The old documentation for Bauble 0.9 can be found at <a
 	href="./docs/0.9/">docs/0.9</a>.
-
-      <h1><a name="download">Download</a></h1>
-      <h3>Installers</h3>
-      <p>
-	<b>Windows</b>
-	<br/>
-	<a href="http://bauble.belizebotanic.org/files/bauble-1.0.11-setup.exe">bauble-1.0.11-setup.exe</a> (stable version)
-	<br />
-
-	<a href="http://bauble.belizebotanic.org/files/bauble-0.9.7-2-setup.exe">bauble-0.9.7-2-setup.exe</a> (old stable version)
-	<br/>
-	This is a basic Windows installer. It doesn't do much else than
-	extract the contents to a directory and creates some links
-	in the Start Menu.
       </p>
 
-      <div>
-	<b>Linux</b>
-	<br/>
-	<a href="http://packman.links2linux.de/package/bauble">OpenSuse packages</a>
-	<!-- <br /> -->
-	<!-- OpenSuse packages -->
-	<!-- <a href="http://packman.links2linux.de/package/bauble">stable</a>  -->
-	<!-- and <a href="http://packman.links2linux.de/package/bauble-update">beta</a> packages -->
-	<br />
-	<a href="https://launchpad.net/~bauble/+archive/ppa">Ubuntu/Debian packages</a>
-	<p>
-	If anyone is willing to create package for other platforms then
-	let me know. If there is not a package available for your
-	distribution then just
-	download the source, extract it and type 'python setup.py install'
-	in the directory you extracted it to. See under "Source" for a list of
-	prerequisites.
-      </div>
+      <h1>Installation</h1>
+      <p> Choose the version you want to install, open its documentation
+        page and look for the installation instructions. </p>
+      <p> The most likely thing is that you want to read it all
+        <a href="http://bauble.readthedocs.org/en/latest/installing.html">here</a>,
+        and you can probably find it translated in your preferred
+        language.</p>
 
-      <h3>Source</h3>
-      <p>
-	To install from the source you will need <a
-	href="http://www.python.org">Python 2.4</a>, <a
-	href="http://www.gtk.org">GTK 2.10</a>, <a
-	href="http://pygtk.org/downloads.html">PyGTK</a>, <a
-	href="http://www.sqlalchemy.org">SQLAlchemy</a> and <a
-	href="http://www.codespeak.net/lxml">lxml</a>, and a <a
-	href="www.initd.org/projects/psycopg2">Postgres</a>,
-	or <a href="http://www.pysqlite.org">SQLite</a> database
-	connector.  For our friends using Windows that want to look
-	at, run or compile from source there are two scripts at
-	scripts/install_deps.py and scripts/install_gtk.py in the
-	source distribution that should install all the dependencies
-	and GTK programs you'll need.  Installing all these extra
-	programs and dependencies are <i>not</i> necessary for the
-	Windows installer, <i>only</i> when running from the source or
-	building the installer.
-      </p>
-
-      <p>
-	<b>Stable version</b>
-	<div style="margin-left: 30px">
-	  <a href="http://bauble.belizebotanic.org/files/bauble-1.0.11.zip">
-	  bauble-1.0.11.zip</a>
-	  <br/>
-	  <a href="http://bauble.belizebotanic.org/files/bauble-1.0.11.tar.gz">
-	  bauble-1.0.11.tar.gz</a>
-	  <br/>
-	  <a href="http://bauble.belizebotanic.org/files/bauble-1.0.11.tar.bz2">
-	  bauble-1.0.11.tar.bz2</a>
-	</div>
-      </p>
-
-      <p>
-	<b>Old Stable version</b>
-	<div style="margin-left: 30px">
-	  <a href="http://bauble.belizebotanic.org/files/bauble-0.9.7.zip">
-	  bauble-0.9.7.zip</a>
-	  <br/>
-	  <a href="http://bauble.belizebotanic.org/files/bauble-0.9.7.tar.gz">
-	  bauble-0.9.7.tar.gz</a>
-	  <br/>
-	  <a href="http://bauble.belizebotanic.org/files/bauble-0.9.7.tar.bz2">
-	  bauble-0.9.7.tar.bz2</a>
-	</div>
-      </p>
-
+      <h1>Bauble Development</h1>
       <p>
         You can visit the project page and browse the latest source code
         from <a href="https://github.com">github</a>
@@ -271,7 +176,7 @@
 	</li>
 	<li>
 	  <strong>I found a bug. What can I do about it?</strong>
-	  
+
           <br/> For bug reports, but also for technical and generic
 	  questions, get a github account and file a bug report
 	  <a href="https://github.com/Bauble/bauble.classic/issues/new">here</a>.
