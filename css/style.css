@@ -3,15 +3,10 @@
 }
 
 #header{
-/*    background: #f0f0f0; */
     border-top: #d2d2d2 solid 1px;
-/*    border-bottom: #d2d2d2 solid 1px; */
-    height: 75px;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    text-align: center;
+    height: 21pt;
+    padding: 10pt 0 0 18pt;
+    text-align: left;
 }
 
 #header a{
