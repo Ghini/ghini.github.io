@@ -33,7 +33,12 @@ body{
 /*    color: #747474;*/
     background: #f0f0f0;
     color: #333333;
-    font: 10pt/14pt sans-serif;
+    font: 12pt/14pt sans-serif;
+    line-height: 135%;
+}
+
+li {
+  margin: 0px 0.5em 6pt 0.5em;
 }
 
 #content{
@@ -79,8 +84,9 @@ body{
     text-decoration: underline;
 }
 
-.screenshot a {
-	border: none;
+div.screenshot {
+    float: right; 
+    margin: 0 1em 0 2em;
 }
 
 .screenshot img {
@@ -96,8 +102,8 @@ body{
 p.bash {
     margin: 6pt 2em 12pt 3em;
     padding: 6pt;
-    font: 10pt/14pt;
-    background-color: #80a0ff;
+    font: 12pt/14pt;
+    background-color: #40608f;
     color: yellow;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
 }
