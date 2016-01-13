@@ -1,0 +1,255 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Bauble - botanic garden plant collection database</title>
+    <meta name="description" content="Bauble is a web app for managing plant collections. Botanical gardens, arboreta, private collections and scientists can use Bauble to manage their plant records and accessions.">
+    <meta name="keywords" content="botanical gardens plant records living collection arboretum accessions taxonomy">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+          rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" >
+
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-43755352-1', 'bauble.io');
+       ga('send', 'pageview');
+    </script>
+    <title>Bauble : biodiversity collection manager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="distribution" content="GLOBAL"/>
+    <meta name="description" content="Bauble is a software application to manage collection of information related to biodiversity and natural history collections and specifically for botanic gardens"/>
+    <meta name="keywords" content="bauble biodiversity collection manager software application free opensource botanic botanical garden plants linux database bioinformatics biological herbarium"/>
+    <meta name="robots" content="ALL"/>
+    <meta name="rating" content="SAFE FOR KIDS"/>
+    <meta name="copyright" content="© Belize Botanic Gardens 2005,2006; © Brett Adams 2005-2008; © Mario Frasca 2012-2015"/>
+
+  </head>
+  <body>
+    <div id="header">
+      <a href="./index.html">
+	<img id="logo" src="images/bauble_logo.gif" alt="logo"/>
+      </a>
+    </div>
+
+    <div id="content">
+
+      <h1>About Bauble</h1>
+      <p>
+	Bauble is a software application to help you (whoever you are)
+	manage a collection of botanical specimens. It is intended to be
+	used (and it is indeed used) by botanic gardens, herbaria, arboreta,
+	etc. to manage their collection information.
+      </p>
+
+      <div class="screenshot">
+        <h2 style="margin-top:0;">screenshots</h2>
+	<a class="ss"
+	   href="./screenshots.html">
+	  <img src="images/screenshots/bauble-main-0.7.0-thumb.png"
+               title="screenshots of Bauble at work."
+	       alt="bauble screenshot link"
+               width="480px"/>
+	</a><br/>
+        <h2>sample videos</h2>
+	<a class="ss"
+	   href="https://www.youtube.com/playlist?list=PLtYRCnAxpinU_8WEDuRlgsYnNVe4J_4kv">
+	  <img src="http://i.ytimg.com/vi/a6ZwMOh2-m8/mqdefault.jpg" 
+               title="Bauble highlights on youtube."
+               width="480px"/>
+	</a>
+        <h2>Ghini - web-geo-future</h2>
+	<a class="ss"
+	   href="https://github.com/mfrasca/ghini/">
+	  <img src="images/screenshots/ghini.png"
+               title="Bauble is friends with Ghini."
+               alt="Bauble is friends with Ghini."
+               width="480px"/>
+	</a>
+      </div>
+
+      <h2 style="margin-top:0;">Features</h2>
+      <ul>
+	<li>
+	  Bauble is designed to be simple and fast, elegant and intuitive.
+	</li>
+	<li>
+	  Bauble is <a href="http://opensource.org">open</a> and
+	  <a href="http://www.fsf.org">free</a>. Bauble is licensed under
+	  the <a href="http://www.fsf.org/licensing/licenses/gpl.html">GPL</a>
+	  which approximately means that anybody can download, study,
+	  distribute, change the source code for Bauble as long as all
+	  derived work stays just as free as Bauble is now.  This does not
+	  in any way affect how you decide to copyright and license the data
+	  you manage with Bauble.
+	</li>
+	<li>
+	  Bauble is cross-platform. Bauble supports both Linux and Windows
+	  and has been successfully ported to other platforms whenever there
+	  was interest.
+	</li>
+	<li>
+	  Bauble can use different database backends and is tested against
+	  <a href="http://www.sqlite.org">SQLite</a>,
+	  <a href="http://www.postgresql.org">PostgreSQL</a>,
+	  <a href="http://www.mariadb.org">MySQL/MariaDB</a>.
+	</li>
+	<li>
+	  Bauble can generate reports through an
+	  <a href="http://www.w3.org/TR/xsl/">XSL formatter</a> backend.
+	  There is no fancy report designer but there is an interface that
+	  allows you to pass the results of a search through an XSL
+	  formatter and the extremely
+	  flexible <a href="http://www.makotemplates.org/">Mako
+	  formatter</a>. This allows you to layout your data any way you
+	  wish and save it in a just about any format you can imagine
+	  including PDF, XML, or HTML.  Hopefully we'll get something a bit
+	  more user(i.e. non-techy) friendly in the future.
+	</li>
+	<li>
+	  Bauble can export data in CSV or Access to Biological Collection
+	  Data (ABCD) format. Bauble adheres to the ITF2 standard for field
+	  naming and content, but it does not yet contain an import-export
+	  feature for this format. Other import-export formats can be
+	  discussed and added to Bauble if the need arises.
+	</li>
+	<li>
+	  Bauble supports tagging.  You can tag any arbitrary data stored in
+	  a Bauble managed database with arbitrary names. This way you can
+	  create collections of records organized the way you want with names
+	  you give them.
+	</li>
+	<li>
+	  ....and lots more. (And I mean lots!)
+	</li>
+      </ul>
+
+      <h2>User Reviews</h2>
+      <p>What User Say About Bauble</p>
+      <ul>
+      <li>Thank you for the great software! I was working on my own collection
+        manager in Rails when I found bauble. I'm happy to have found something
+        I can use straightaway. [K.B. - (bauble forum)]</li>
+      <li>Thank you for developing this and [...] for the privilege of using
+        your program. [N.B. - Lovett Pinetum]</li>
+      <li>Acá ya lo tenemos instalado y nos funciona de maravilla. [T.J. - Jardín Botánico Quito]</li>
+      <li>Un super logiciel. Félicitations pour votre initiative libre et
+        open-source. [M.C. - Telabotanica]</li>
+      <li>at work we [use] Bauble version 1.0.11 on a windows 7 system, [...] version 1.0.53 on my Ubuntu 14.04 laptop at home and also on [a] MacBook Air (great demonstration of cross platform compatibility!). [R.D. - Mackay Regional Botanic Gardens]</li>
+      </ul>
+
+      <h1>Documentation</h1>
+      <p>
+	The <a href="http://bauble.readthedocs.org/">current
+	documentation</a> for Bauble is hosted
+	at <a href="http://readthedocs.org/">readthedocs</a>.
+      </p>
+      <p>
+	The old documentation for Bauble 0.9 can be found at <a
+	href="./docs/0.9/">docs/0.9</a>.
+      </p>
+
+      <h1>Installation</h1>
+      <p> Choose the version you want to install, open its documentation
+        page and look for the installation instructions. </p>
+      <p> The most likely thing is that you want to read it all
+        <a href="http://bauble.readthedocs.org/en/latest/installing.html">here</a>,
+        and you can probably find it translated in your preferred
+        language.</p>
+
+      <h1>Bauble Development</h1>
+      <p>
+        You can visit the project page and browse the latest source code
+        from <a href="https://github.com">github</a>
+        at <a href="https://github.com/Bauble/bauble.classic">Bauble/bauble.classic</a>
+        or check it out with...
+      </p>
+      <p class="bash">
+	git clone https://github.com/Bauble/bauble.classic.git
+      </p>
+
+      <h1>Frequently Asked Questions</h1>
+      <ol>
+	<li>
+	  <strong>Why another collection manager application?</strong>
+	  <br/>
+	  At <a href="http://www.belizebotanic.org">Belize Botanic Gardens</a>
+	  we felt that the other collection management software was either too
+	  expensive, inadequate or only supported Windows so we decided to
+	  create our own.
+	</li>
+	<li>
+	  <strong>But why for free?</strong>
+	  <br/>
+	  We feel that current collection management software is overpriced
+	  especially for small institutions in developing countries.
+	  Biodiversity affects our entire world and everything that relies on
+	  it to live. To help protect such a fragile system the management
+	  of information related to biodiversity should not be restricted.
+	</li>
+	<li>
+	  <strong>I found a bug. What can I do about it?</strong>
+
+          <br/> For bug reports, but also for technical and generic
+	  questions, get a github account and file a bug report
+	  <a href="https://github.com/Bauble/bauble.classic/issues/new">here</a>.
+	</li>
+      </ol>
+      
+      <h2>Contact</h2>
+      <p>
+	For more information about Bauble or if you have any other questions
+	and you do not want to get a github account, please write to
+	<a href="mailto:bauble@googlegroups.com">bauble@googlegroups.com</a>. A
+	Bauble administrator will reply as soon as possible.
+      </p>
+    </div>
+
+    <div style="padding: 10px; text-align: center">
+      <a style="text-decoration: none; border: none"
+	 href="http://validator.w3.org/check?uri=referer">
+	<img style="border: none" src="http://www.w3.org/Icons/valid-xhtml10"
+	     alt="Valid XHTML 1.0!" height="31" width="88" />
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://bauble.belizebotanic.org/style.css">
+	<img style="border:0;width:88px;height:31px"
+	     src="http://jigsaw.w3.org/css-validator/images/vcss"
+	     alt="Valid CSS!" />
+      </a>
+<img alt="https://travis-ci.org/Bauble/bauble.classic.svg?branch=bauble-1.0" src="https://travis-ci.org/Bauble/bauble.classic.svg?branch=bauble-1.0" />
+<img alt="https://coveralls.io/repos/Bauble/bauble.classic/badge.svg?branch=master&amp;service=github:target:https://coveralls.io/github/Bauble/bauble.classic?branch=master" src="https://coveralls.io/repos/Bauble/bauble.classic/badge.svg?branch=master&amp;service=github:target:https://coveralls.io/github/Bauble/bauble.classic?branch=master" />
+    </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-4278957-1");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+    <div style="text-align: center">
+        Use <a href="http://www.gogreenbelize.com">Go Green Belize</a> to book your next <a href="http://www.gogreenbelize.com">Belize vacation</a>
+    </div>
+
+  </body>
+</html>

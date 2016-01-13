@@ -1,0 +1,382 @@
+/*
+  https://kuler.adobe.com/#themeID/7245;
+  #607056 #519E41 #85BF89 #9DDBB2 #BFE8BE
+  */
+/*
+  https://kuler.adobe.com/#themeID/137458
+  BAE8E5 CCF4FF D9FFF2 BAE8CB CCFFD1
+  */
+
+/* $orange: #ff530d; */
+/* $baby-blue: #bdd4de; */
+/* $light-grey: #efefef; */
+/* $dark-blue: #2b3a42; */
+
+/* $background-color: #efefef; //#FCFFF5; //#D9CB9E; //#F5E5C0; */
+
+/* $heading-color: #2B3A42; //#3F5765; // #1E1E20; // #265573; // #386d73; */
+/* $heading-font-family: 'Raleway', sans-serif; */
+/* $heading-font-weight: 300; */
+
+/* $font-family: 'Open Sans', sans-serif; */
+/* $font-color: #3F5765; //#2A2C2B; //#386d73; */
+/* $link-color: #265573; */
+
+/* $navbar-bg-color: #2B3A42; //#193441; // #374140; // #097380; // #265573; */
+/* $navbar-color: $background-color; //#F5E5C0; //#265573; */
+/* $navbar-height: 50px;  // this is the default from bootstrap */
+/* $navbar-border: solid 1px #FF530D; //#DC3522; //orange; */
+
+/* $footer-height: 15em; */
+
+/* $footer-bg-color: #2B3A42; //#81A68A; */
+/* $footer-font-color: #BDD4DE; //$background-color; //#265573; */
+/* $footer-border: $navbar-border; */
+
+/* $icon-color: #FF530D; */
+
+
+/**
+ * The layout uses the sticky footer from here: http://getbootstrap.com/examples/sticky-footer-navbar/
+ */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+    background-color: #efefef;
+    color: #3F5765;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    box-shadow:  0px 5px 20px 20px rgba(50, 50, 50, 0.75);
+}
+
+body > .container {
+    padding-top: 50px;
+}
+
+p  {
+    //font-size: 100%;
+    color: #3F5765;
+}
+
+a {
+    color: #ff530d;
+    /* color: #265573; */
+}
+
+h1, h2, h3, h4, h5, legend {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #2B3A42;
+    margin-left: 0;
+}
+
+
+@media only screen and (min-width : 768px) {
+    #footer {
+        /*
+         * for some reason setting the height on mobile chops off the bottom of the footer
+         * or at least the last column
+         */
+        height: 1200px;
+    }
+}
+
+#footer {
+    padding-top: 1050px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(50, 50, 50, 1);
+}
+
+#footer p {
+    color: #aaa;
+}
+
+#footer a {
+    color: #eee;
+    display: block;
+    font-size: 95%;
+    padding: .3em;
+}
+
+#footer .copyright {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: .9em;
+    margin-right: 2em;
+    background-color: inherit;
+}
+
+
+#content {
+    //padding-top: 100px;  /* Height of the footer */
+    //background-color: #efefef;
+    //font-family: 'Open Sans', sans-serif;
+
+    position: relative;
+    z-index: 100;
+    //background-color: $light-grey !important;
+    margin-bottom: 200px;
+
+    padding-top: 3em;
+    overflow: hidden;
+    height: 100%;
+    min-height: 700px;
+}
+
+@media only screen and (min-width : 768px) {
+    #content {
+        margin-top: 50px;
+    }
+}
+
+
+.error {
+    color: red;
+}
+
+.navbar {
+    background-color: #2B3A42;
+    color: #efefef;
+    border-bottom: solid 1px #FF530D;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-toggle {
+    border: solid 2px white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ff753d;
+}
+
+.navbar-toggle .icon-bar {
+    color: white;
+}
+
+/* .navbar a,  */
+/* .navbar > li > a {  */
+
+/* use id selector to increase specificity so we can override bootstrap */
+
+/* #main-nav li > a { */
+#main-nav li > a, #main-nav a {
+    color: #efefef;
+}
+
+/* .navbar a:hover, .navbar li > a:hover {  */
+#main-nav a:hover, #main-nav li > a:hover {
+    color: #ff530d;
+    background-color: #2b3a42; /* dark blue */
+}
+
+.dropdown-menu {
+    border-bottom: solid 1px #FF530D;
+}
+
+.dropdown-menu a, li > a {
+    color: #2B3A42;
+}
+
+.dropdown-menu a:hover, .dropdown-menu li > a:hover {
+    color: #FF530D;
+    background-color: white !important;
+    background-image: none; /* undo bootstrap background gradient on hover */
+}
+
+
+/*
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+    color: #FF530D;
+    color: #555;
+    background-color: #FF530D;//#d5d5d5;
+}
+*/
+
+
+.fa {
+    color: #FF530D;
+}
+
+
+.feature-icon {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width : 768px) {
+    #index-page h1 {
+        margin-top: 30%;
+    }
+}
+
+#index-page h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+#index-page .section1 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#index-page .description {
+    margin-top: 4em;
+}
+
+#privacy-page {
+    padding-bottom: 3em;
+}
+
+
+#faq-page {
+    padding-bottom: 3em;
+}
+    #faq-page h4 {
+        font-weight: bold;
+    }
+
+    #faq-page .question-block {
+        padding-top: .5em;
+    }
+
+
+/* @media (max-width: 979px) { */
+/*   body { */
+/*     padding-top: 0px; */
+/*   } */
+/* } */
+
+.curious {
+    text-align: center;
+}
+.curious a {
+    color: #ff530d;
+}
+
+
+.not-ready-warning {
+    background-color: #ff530d;
+    font-size: 90%;
+    text-align: center;
+}
+
+.not-ready-warning p {
+    color: #efefef;
+
+}
+
+#curious-page {
+    padding-bottom: 3em;
+}
+    #curious-page li {
+        padding-bottom: 1em;
+    }
+
+    #curious-page .feature-title {
+        font-weight: bold;
+    }
+
+/*
+ * Re-add nested dropdown support to BS3
+ */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+
+.dropdown-submenu>a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+
+.dropdown-submenu:hover>a:after{
+    border-left-color:#ffffff;
+}
+
+.dropdown-submenu.pull-left{
+    float:none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+.post-title {
+    display: inline-block;
+}
+
+.post-date {
+    margin-left: 3em;
+    font-size: 120%;
+}
+
+.post-block {
+    padding-bottom: 3em;
+    border-bottom: solid 1px #ff530d;
+}
+
+.post-block p {
+    margin-bottom: 1.75em;
+}
+
+.selected-page {
+    color: #ff530d !important;;
+}
+
+
+#signup-now {
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 10em;
+    //clear: both;
+}
+
+#signup-now a {
+    width: 100%;
+    font-size: 200%;
+    margin: 6em 0;
+    text-align: center;
+    padding: 1.5em 2em;
+    background-color: #ff753d;
+    color: white;
+    border-radius: 5px;
+}
