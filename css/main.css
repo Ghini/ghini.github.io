@@ -1,62 +1,15 @@
-/*
-  https://kuler.adobe.com/#themeID/7245;
-  #607056 #519E41 #85BF89 #9DDBB2 #BFE8BE
-  */
-/*
-  https://kuler.adobe.com/#themeID/137458
-  BAE8E5 CCF4FF D9FFF2 BAE8CB CCFFD1
-  */
-
-/* $orange: #ff530d; */
-/* $baby-blue: #bdd4de; */
-/* $light-grey: #efefef; */
-/* $dark-blue: #2b3a42; */
-
-/* $background-color: #efefef; //#FCFFF5; //#D9CB9E; //#F5E5C0; */
-
-/* $heading-color: #2B3A42; //#3F5765; // #1E1E20; // #265573; // #386d73; */
-/* $heading-font-family: 'Raleway', sans-serif; */
-/* $heading-font-weight: 300; */
-
-/* $font-family: 'Open Sans', sans-serif; */
-/* $font-color: #3F5765; //#2A2C2B; //#386d73; */
-/* $link-color: #265573; */
-
-/* $navbar-bg-color: #2B3A42; //#193441; // #374140; // #097380; // #265573; */
-/* $navbar-color: $background-color; //#F5E5C0; //#265573; */
-/* $navbar-height: 50px;  // this is the default from bootstrap */
-/* $navbar-border: solid 1px #FF530D; //#DC3522; //orange; */
-
-/* $footer-height: 15em; */
-
-/* $footer-bg-color: #2B3A42; //#81A68A; */
-/* $footer-font-color: #BDD4DE; //$background-color; //#265573; */
-/* $footer-border: $navbar-border; */
-
-/* $icon-color: #FF530D; */
-
-
 /**
  * The layout uses the sticky footer from here: http://getbootstrap.com/examples/sticky-footer-navbar/
  */
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-html, body {
+body {
     background-color: #efefef;
     color: #3F5765;
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    box-shadow:  0px 5px 20px 20px rgba(50, 50, 50, 0.75);
-}
-
 body > .container {
-    padding-top: 50px;
+    padding: 24pt;
 }
 
 p  {
