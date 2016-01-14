@@ -22,7 +22,6 @@
           rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
           rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet" >
 
     <title>Ghini : biodiversity collection manager</title>
@@ -42,10 +41,12 @@
 
         <h1 >what's in a name</h1>
 	<img align="right" id="logo" src="images/Ghini-burn.jpg" alt="logo" width="200px"/>
-        <p style="width:250px;border-right:30px">Luca Ghini (Casalfiumanese 1490 – Bologna, May 4, 1556) was an
-        Italian physician and botanist, notable as the creator of the first
-        recorded herbarium, as well as the first botanical garden in
-        Europe.(Wikipedia)</p> <br style="clear:both"/>
+        <p style="width:250px;border-right:30px">Luca Ghini (Casalfiumanese
+        1490 – Bologna, May 4, 1556) was an Italian physician and botanist,
+        notable as the creator of the first recorded herbarium, as well as
+        the first botanical garden in
+        Europe.(<a href="https://en.wikipedia.org/wiki/Luca_Ghini">Wikipedia</a>)</p>
+        <br style="clear:both"/>
 
         <h2 style="margin-top:0;">screenshots</h2>
 	<a class="ss"
@@ -79,9 +80,10 @@
 	collection information.
       </p>
       <p>
-        For those who know Bauble and are wondering, Ghini is Bauble, only
-        with a different name, which is easier to pronounce for the current
-        Italian maintainer, and easier to explain if anyone asks.
+        For those who know and/or use Bauble and are wondering, Ghini <em>is</em>
+        Bauble, only with a different name, which is easier to pronounce for
+        the current Italian maintainer, and easier to explain if anyone
+        asks.
       </p>
 
       <h2 style="margin-top:0;">Features</h2>
@@ -111,16 +113,13 @@
 	  <a href="http://www.mariadb.org">MySQL/MariaDB</a>.
 	</li>
 	<li>
-	  Ghini can generate reports through an
-	  <a href="http://www.w3.org/TR/xsl/">XSL formatter</a> backend.
-	  There is no fancy report designer but there is an interface that
-	  allows you to pass the results of a search through an XSL
-	  formatter and the extremely
+	  Ghini can generate reports through the extremely
 	  flexible <a href="http://www.makotemplates.org/">Mako
 	  formatter</a>. This allows you to layout your data any way you
 	  wish and save it in a just about any format you can imagine
-	  including PDF, XML, or HTML.  Hopefully we'll get something a bit
-	  more user(i.e. non-techy) friendly in the future.
+	  including PostScript, XML, or HTML.  <span style="color:#888888">We acknowledge that writing a
+	  mako script is not something we can expect from a botanist, so we
+	  are organizing an on-line repository for common reports.</span>
 	</li>
 	<li>
 	  Ghini can export data in CSV or Access to Biological Collection
@@ -141,7 +140,7 @@
       </ul>
 
       <h2>User Reviews</h2>
-      <p>What User Say About Ghini</p>
+      <p>What User Say About Bauble and Ghini</p>
       <ul>
       <li>Thank you for the great software! I was working on my own collection
         manager in Rails when I found bauble. I'm happy to have found something
@@ -151,7 +150,10 @@
       <li>Acá ya lo tenemos instalado y nos funciona de maravilla. [T.J. - Jardín Botánico Quito]</li>
       <li>Un super logiciel. Félicitations pour votre initiative libre et
         open-source. [M.C. - Telabotanica]</li>
-      <li>at work we [use] Bauble version 1.0.11 on a windows 7 system, [...] version 1.0.53 on my Ubuntu 14.04 laptop at home and also on [a] MacBook Air (great demonstration of cross platform compatibility!). [R.D. - Mackay Regional Botanic Gardens]</li>
+      <li>at work we [use] Bauble version 1.0.11 on a windows 7 system,
+      [...] version 1.0.53 on my Ubuntu 14.04 laptop at home and also on [a]
+      MacBook Air (great demonstration of cross platform
+      compatibility!). [R.D. - Mackay Regional Botanic Gardens]</li>
       </ul>
 
       <h1>Documentation</h1>
@@ -183,27 +185,36 @@
       <h1>Frequently Asked Questions</h1>
       <ol>
 	<li>
-	  <strong>Why another collection manager application?</strong>
-	  <br/>
-	  At <a href="http://www.belizebotanic.org">Belize Botanic Gardens</a>
-	  we felt that the other collection management software was either too
-	  expensive, inadequate or only supported Windows so we decided to
-	  create our own.
+	  <strong>Why was the Bauble project started?</strong>
+
+          <br/> At <a href="http://www.belizebotanic.org">Belize Botanic
+	  Gardens</a> people felt that the other collection management
+	  software was either too expensive, inadequate or only supported
+	  Windows so they decided to create their own.
 	</li>
 	<li>
 	  <strong>But why for free?</strong>
-	  <br/>
-	  We feel that current collection management software is overpriced
-	  especially for small institutions in developing countries.
-	  Biodiversity affects our entire world and everything that relies on
-	  it to live. To help protect such a fragile system the management
-	  of information related to biodiversity should not be restricted.
+
+	  <br/> Collection management software is out of reach for small
+	  institutions in developing countries.  Bauble/Ghini contribute to
+	  providing unrestricted access to management of information related
+	  to biodiversity.
+	</li>
+	<li>
+	  <strong>What's this GNU Public License?</strong>
+
+	  <br/> Ghini and Bauble are not just free as free beer, they are
+          free as free speech. The GPL is a license that guarantees that the
+          freedoms you are given with the product will stick to the
+          product <em>for ever</em>. The GPL answers the question "what if
+          someone makes it proprietary": only the owners of the copyright
+          can do that, and currently that includes no less than 10 people.
 	</li>
 	<li>
 	  <strong>I found a bug. What can I do about it?</strong>
-          <br/> 
-          For bug reports, but also for technical and generic
-	  questions, get a github account and file a bug report
+
+          <br/> For bug reports, but also for technical and generic
+          questions, get a github account and file a bug report
 	  <a href="https://github.com/Ghini/ghini.desktop/issues/new">here</a>.
 	</li>
       </ol>
