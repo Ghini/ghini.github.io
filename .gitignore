@@ -3,5 +3,3 @@ _site/
 venv
 Gemfile.lock
 *~
-*/*~
-*/*/*~
