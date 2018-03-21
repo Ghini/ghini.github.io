@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Bauble 1.0.0"
+title:  "Bauble 1.0.0-β"
 date:   2009-06-24 14:32:52 -0400
 categories: software
 ---
-version 1.0 released.
+first beta version 1.0.0
