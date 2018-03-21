@@ -13,3 +13,14 @@ herbarium, as well as the first botanical garden in
 Europe. [Wikipedia](https://en.wikipedia.org/wiki/Luca_Ghini)
 
 ![image-title-here](/images/Ghini-burn.jpg)
+
+Mario Frasca, the current maintainer of this software, completed his
+computer science studies in Pisa, home town to Luca Ghini's first botanical
+garden.
+
+After adopting this software as Bauble, struggling in Spanish speaking Latin
+America with getting the name correctly pronounced, and even worse having to
+correct every time the automatic translation made it become a "bagatella" or
+"chuchería", the Italian speaking maintainer just thought it would be better
+to have a name that means nothing at all, but which was more clearly related
+to botany.
