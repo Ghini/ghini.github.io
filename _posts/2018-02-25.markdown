@@ -5,3 +5,4 @@ date:   2018-02-25 12:00 -05:00
 categories: software
 ---
 
+first beta version for ghini.tour published on google play.
