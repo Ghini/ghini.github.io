@@ -5,7 +5,7 @@ date:   2018-01-31 12:00 -05:00
 categories: software
 ---
 
-Just published a quite different ghini.pocket version.
+Just published APK#2, a quite different ghini.pocket version.
 
 Technically, it is not any more based on 'Activity', but on 'Fragment'.
 
