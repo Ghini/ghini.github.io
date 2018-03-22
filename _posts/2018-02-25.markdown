@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "publishing ghini.tour on google play"
+date:   2018-02-25 12:00 -05:00
+categories: software
+---
+
