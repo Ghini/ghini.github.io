@@ -13,7 +13,7 @@ collectors, etc. to manage their collection information.
 
 * **ghini.desktop** lets you create and query a database representing objects and events in your plant collection.
 * **ghini.web** publishes highlights from your database on the web.
-* **ghini.pocket** puts a snapshot of your database in your handheld device.
+* **ghini.pocket** puts a snapshot of your database in your handheld device; it helps review your inventory.
 * **ghini.tour** assists garden visitors with a map and spoken virtual panels.
 
 
