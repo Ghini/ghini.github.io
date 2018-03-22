@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "taxonomy help for MeeGo"
+date:   2018-03-18 12:00 -05:00
+categories: software
+---
+
+just an experiment, no more than 28kbytes of code, and we have the same
+taxonomic help offered by ghini.pocket, in an N9, nokia's MeeGo phone.
+
+it is ways faster writing than with Android, and I have been testing this,
+not only because I wanted to have that same taxonomic help at hand in my
+phone, but also because, who knows, maybe it's possible to compile this code
+and run it as-is on Android.  this would speed up development on my side.
