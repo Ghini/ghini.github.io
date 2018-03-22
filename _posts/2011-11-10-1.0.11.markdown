@@ -4,4 +4,7 @@ title:  "Bauble 1.0.11 released"
 date:   2011-11-10 20-37 -0500
 categories: software
 ---
-Bauble 1.0.11 released.  This is the last release published as plain Bauble.  After this, development will split into classic, web, webapp, and finally into the Ghini suite.
+
+Bauble 1.0.11 released.  This is the last release published as plain Bauble.
+After this, development will split into classic, web, webapp, and branching,
+merging, dying out, starting again, until finally into the Ghini suite.
