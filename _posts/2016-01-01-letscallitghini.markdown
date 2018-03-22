@@ -10,10 +10,13 @@ it has become quite different than the original 'bauble'.  The web prototype
 has been growing slow, it's still not much more than a prototype, but let's
 just choose this day and finally say it's time to join stuff under one name.
 
-The external event triggering the decision was the original author rolling
-back changes by other authors and publishing his personal 'bauble' version.
-I would not like to have two different programs under the same name: better
-two different programs under two different names.
+The external event triggering the decision is that the original author
+rolled back bauble to when he was the only contributor, and is now playing
+at his own web based bauble, based on a different technology than ghini's,
+releasing it under a permissive licence.
+
+I think that to have two different programs under one name will only confuse
+people: better two different programs under two different names.
 
 Thanks to Francesca Ponzio for the new logo!
 
