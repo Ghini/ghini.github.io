@@ -14,13 +14,13 @@ Europe. [Wikipedia](https://en.wikipedia.org/wiki/Luca_Ghini)
 
 ![image-title-here](/images/Ghini-burn.jpg)
 
-Mario Frasca, the current maintainer of this software, completed his
-computer science studies in Pisa, home town to Luca Ghini's first botanical
-garden.
+Pisa, home town to Luca Ghini's first botanical garden, is where the current
+maintainer of this software, Mario Frasca, completed his computer science
+studies.
 
-After adopting this software as Bauble, struggling in Spanish speaking Latin
-America with getting the name correctly pronounced, and even worse having to
-correct every time the automatic translation made it become a "bagatella" or
-"chuchería", the Italian speaking maintainer just thought it would be better
-to have a name that means nothing at all, but which was more clearly related
-to botany.
+After adopting this software as Bauble, and having long been struggling in
+Spanish speaking Latin America getting the name correctly pronounced, and
+even worse having to correct every time the automatic translation made it
+become a "bagatella", "babiole", or even "chuchería", the Italian speaking
+maintainer thought it was high time to choose something else, meaningless to
+translating software, and more clearly related to botany.
