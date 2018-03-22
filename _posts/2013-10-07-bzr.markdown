@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "migrated from bzr to git"
+date:   2013-10-07 07:45 -0400
+categories: software
+---
+
+bauble was initially hosted on launchpad, and it's now moving to github.
