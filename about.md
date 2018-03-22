@@ -16,6 +16,7 @@ collectors, etc. to manage their collection information.
 * **ghini.pocket** puts a snapshot of your database in your handheld device; it helps review your inventory.
 * **ghini.tour** assists garden visitors with a map and spoken virtual panels.
 
-
-For those who know and/or use Bauble and are wondering, ghini.desktop is a
-bauble.classic fork.  The rest of the suite is specific to Ghini.
+In the good-old-bauble-days, we were only offering you the equivalent of
+ghini.desktop.  The centrally placed ghini.web was born in August 2012, more
+or less at the same time when I found out that bauble existed, and its
+development has gone so slow mostly because nobody was missing it.
