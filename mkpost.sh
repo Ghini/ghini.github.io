@@ -1,14 +1,22 @@
 #!/bin/bash
 
-name=$(date -I $1).markdown
+title='no title'
+category=software
+picture=abc.png
+
+date=$(date -I $1)
+name=$date-$(echo $title | tr ' ' '-').markdown
 timestamp=$(date -Iminutes $1 | sed -e 's/T/ /' -e 's/\(...:..\)$/ \1/')
 
 cat <<EOF > _posts/$name
 ---
 layout: post
-title:  "PLEASE REPLACE"
+title:  "$title"
 date:   $timestamp
-categories: software
+categories: $category
 ---
+
+
+![$picture](/images/$date-$picture)
 
 EOF
