@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mario Frasca first commit to Bauble"
+title:  "Ghini adopts Bauble"
 date:   2014-01-23 09:46 -0500
 categories: software
 ---
