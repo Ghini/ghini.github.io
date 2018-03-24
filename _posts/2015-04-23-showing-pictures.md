@@ -7,7 +7,8 @@ categories: software
 
 issue #51 was about associating pictures to plants.  this was my first
 serious addition to bauble, and it was an addition that the Botanical Garden
-in Quito was willing to finance.  it cost me some three days work.
+in Quito was willing to finance.  the raw implementation core cost me some
+three days work, now there's the hard part: documenting it.
 
 - work in progress on #51. can select and store picture root folder, augmenting configuration file.
 
