@@ -46,3 +46,17 @@ permalink: /faq/
   For bug reports, but also for technical and generic questions, don't be
   shy, get a github account and [file a bug
   report](https://github.com/Ghini/ghini.desktop/issues/new).
+
+* What other resources are available?
+
+  users and potential users possibly most interested in:
+  
+  [[home page](http://ghini.github.io), you already found it], [[user manual](http://ghini.rtfd.io)], [[user forum](https://groups.google.com/forum/#!forum/bauble)], [[ghini.web - running](http://gardens.ghini.me)], 
+
+  more technical stuff:
+  
+  [[travis-ci](https://travis-ci.org/Ghini/ghini.desktop/)], [[coveralls](https://coveralls.io/github/Ghini/ghini.desktop)], [[translations](https://hosted.weblate.org/projects/ghini/)].
+
+  even more technical, the sources:
+
+  [[desktop - sources](http://github.com/Ghini/ghini.desktop)], [[web - sources](http://github.com/Ghini/ghini.web)], [[pocket, sources](http://github.com/Ghini/ghini.pocket)], [[tour, sources](http://github.com/Ghini/ghini.tour)], 
