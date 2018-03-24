@@ -9,6 +9,7 @@ since we've done a new start at translating software and this time also the
 documentation, why not inform other linguistic communities about our
 existence.
 
-Tela Botanica is the réseau (network) de la botanique francophone.
-
-http://www.tela-botanica.org/actu/article6907.html
+[Tela Botanica](http://www.tela-botanica.org) is the réseau (network) de la
+botanique francophone, and it welcomes contributions and news.  This is [my
+article](http://www.tela-botanica.org/actu/article6907.html), introducing
+our software.
