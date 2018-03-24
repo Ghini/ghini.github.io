@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "in Cuba as poster"
+title:  "to Cuba as poster"
 date:   2018-03-24 09:29 -05:00
 categories: software
 ---
