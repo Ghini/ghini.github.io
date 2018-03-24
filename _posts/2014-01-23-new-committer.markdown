@@ -18,7 +18,7 @@ just use the classic version: as far as he's concerned, future lays in
 bauble.web, and he's not going to work at bauble.classic any longer.
 
 in Mompox we only need something working, we don't care if it's web or
-desktop, as long as it works, right now, so I forked the software, and will
+desktop, as long as it works—right now, so I forked the software, and will
 have a look, it can't be that difficult, just updating a few dependencies,
 can it?
 
