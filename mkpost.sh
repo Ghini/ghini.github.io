@@ -5,7 +5,7 @@ category=software
 picture=abc.png
 
 date=$(date -I $1)
-name=$date-$(echo $title | tr ' ' '-').markdown
+name=$date-$(echo $title | tr ' ' '-').md
 timestamp=$(date -Iminutes $1 | sed -e 's/T/ /' -e 's/\(...:..\)$/ \1/')
 
 cat <<EOF > _posts/$name
