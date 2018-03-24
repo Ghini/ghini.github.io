@@ -1,10 +1,13 @@
 #!/bin/bash
-## create a template post
+## create a template post and open it in emacs
 ##
 ## t - title, 
 ## c - category, 
 ## p - picture, include a link to a picture
 ## and the timestamp, mmddHHMMYY
+
+# make sure we are in the project root dir, same as script location.
+cd $(dirname $0)
 
 # default values
 #
@@ -71,3 +74,5 @@ categories: $category
 ![$picture](/images/$date-$picture)
 
 EOF
+
+emacsclient -n _posts/$name
