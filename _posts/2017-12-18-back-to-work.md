@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "back to work"
+title:  "back to Panama, back to work"
 date:   2017-12-18 18:53 -05:00
 categories: software
 ---
