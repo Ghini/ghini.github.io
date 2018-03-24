@@ -23,6 +23,17 @@ permalink: /faq/
   largest ones in a few countries.  Bauble/Ghini contribute to providing
   unrestricted access to management of information related to biodiversity.
 
+* So again, is there a price attached to Ghini/Bauble?
+
+  If you are able to download, install, configure, and learn using (and the
+  documentation explains all of it), then Ghini is being offered free of
+  charge, for the simple reason that you're not costing time nor effort to
+  the Ghini people.
+
+  If you need help to do any of the above, we are professionally available,
+  and the cost we generally compute related to what you can pay, and to
+  wages in your own country.
+
 * What's this GNU Public License?
 
   Ghini and Bauble are not just free as free beer, they are free as free
