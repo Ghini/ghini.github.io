@@ -19,5 +19,9 @@ bauble.web, and he's not going to work at bauble.classic any longer.
 
 in Mompox we only need something working, we don't care if it's web or
 desktop, as long as it works, right now, so I forked the software, and will
-be working on my own branch, we see how things develop, it can't be that
-difficult, just updating a few dependencies, can it?
+have a look, it can't be that difficult, just updating a few dependencies,
+can it?
+
+I had a look at bauble.web, I didn't understand how to install it, and it
+does not do mapping, which is my focus at the moment.  So I guess we will be
+inserting data via old bauble, and view it via new ghini.
