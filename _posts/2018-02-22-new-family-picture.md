@@ -7,7 +7,7 @@ categories: software
 
 expanding and simplifying the family, and describing the interconnection among components.
 
-![ghini-family-45.png](/images/ghini-family-45.png)
+![ghini-family-streams.png](/images/ghini-family-streams.png)
 
 - square blocks represent programs and their icons suggest their role
 
