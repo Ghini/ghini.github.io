@@ -9,7 +9,7 @@ expanding and simplifying the family, and describing the interconnection among c
 
 ![ghini-family-45.png](/images/ghini-family-45.png)
 
-- square blocks are programs involved with ghini,
+- square blocks represen programs and their icons suggest their role
 
   their background colour indicates whether the program is part of the
   Ghini family (pale blue) or just adopted or otherwise supporting Ghini (okra).
