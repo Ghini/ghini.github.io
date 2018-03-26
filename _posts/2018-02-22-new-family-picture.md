@@ -9,12 +9,12 @@ expanding and simplifying the family, and describing the interconnection among c
 
 ![ghini-family-45.png](/images/ghini-family-45.png)
 
-- square blocks represen programs and their icons suggest their role
+- square blocks represent programs and their icons suggest their role
 
   their background colour indicates whether the program is part of the
   Ghini family (pale blue) or just adopted or otherwise supporting Ghini (okra).
 
-- arrows indicate data flows,
+- thick green arrows indicate data flows,
 
   dark green: continuous data flows, the core purpouse of the program involved.
 
@@ -24,3 +24,9 @@ expanding and simplifying the family, and describing the interconnection among c
 
   a red line starting at a program block and ending with a bullet on a
   data flow indicates which program initiates that particular data flow.
+
+please note: this page is just today's article, while the [final reference
+document](http://ghini.readthedocs.io/en/ghini-1.0-dev/ghini-family.html) is
+in our documentation, and that is what we keep up to date, and what our
+translators help us distribute in several languages.
+
