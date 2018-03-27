@@ -13,3 +13,9 @@ better, having a so-and-so poster, than no poster at all.
 
 ![the poster](/images/2018-03-22-cuba-poster.png)
 
+-------------------------
+*************************
+
+2018-03-27; discussed & reviewed, here it comes again, this is sort of acceptable:
+
+![the poster](/images/2018-03-22-cuba-poster-v2.png)
