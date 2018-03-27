@@ -32,5 +32,7 @@ of my own sandbox, in the new [Ghini organization on
 github](https://github.com/Ghini/), and we still share [one facebook
 page](https://www.facebook.com/bauble.thesoftware/) with Bauble.
 
-There's still the more technical sites travis-ci, coveralls.io, and sentry.
-The first two moved to Ghini, the last one stays on Bauble.
+There's still the more technical sites
+[travis-ci](https://travis-ci.org/Ghini/),
+[coveralls.io](https://coveralls.io/github/Ghini/), and Sentry.  The first
+two moved to Ghini, the last one stays on Bauble.
