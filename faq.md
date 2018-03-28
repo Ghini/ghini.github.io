@@ -58,16 +58,33 @@ permalink: /faq/
   shy, get a github account and [file a bug
   report](https://github.com/Ghini/ghini.desktop/issues/new).
 
+* I can read English but my colleagues want to have it in our own language!
+
+  Fine, we can fix that, will you help?  Both software and documentation are
+  [hosted on weblate](https://hosted.weblate.org/projects/ghini/).
+
+  If your language is not listed, tell us: adding a translated is a routine
+  activity, and the initially empty translation will be available less than
+  10 minutes after we commit the change.
+
+  Translations in the documentation will be (almost) immediately visible,
+  while those in the software have to wait until a next release.
+
+  Weblate is a courtesy of Michal Čihař, author of the very user friendly
+  weblate translation support software.
+
 * What other resources are available?
 
-  users and potential users possibly most interested in:
+  Let's list all of them, whether we have mentioned them already, or not.
+  
+  Users and potential users possibly most interested in:
   
   [[home page](http://ghini.github.io), you already found it], [[user manual](http://ghini.rtfd.io)], [[user forum](https://groups.google.com/forum/#!forum/bauble)], [[ghini.web - running](http://gardens.ghini.me)], 
 
-  more technical stuff:
+  More technical stuff:
   
   [[travis-ci](https://travis-ci.org/Ghini/ghini.desktop/)], [[coveralls](https://coveralls.io/github/Ghini/ghini.desktop)], [[translations](https://hosted.weblate.org/projects/ghini/)].
 
-  even more technical, the sources:
+  Even more technical, the sources:
 
   [[desktop - sources](http://github.com/Ghini/ghini.desktop)], [[web - sources](http://github.com/Ghini/ghini.web)], [[pocket, sources](http://github.com/Ghini/ghini.pocket)], [[tour, sources](http://github.com/Ghini/ghini.tour)], 
