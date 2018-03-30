@@ -11,7 +11,7 @@ partially a translation from [our recent Cuba poster]({% post_url 2018-03-24-cub
 
 ## ghini a adopté bauble.classic
 
-Une mise au jour, de [une publication de il-y-a plus que deux ans et demi]((http://www.tela-botanica.org/actu/article6907.html#forum6020)) : le logiciel libre (GPL) Ghini a adopté le module centrale le plus ancien de Bauble, le a bien intégré et il a encore grandi.
+Une mise au jour, de [une publication de il-y-a plus que deux ans et demi]((http://www.tela-botanica.org/actu/article6907.html#forum6020)) : le logiciel libre (GPL) Ghini a adopté le module centrale le plus ancien de Bauble, il a bien intégré et il a encore grandi.
 
 Vous écrit Mario Frasca, un des auteurs des logiciels libres Ghini et Bauble, maintenant le principal promoteur de Ghini, et en géneral de l'utilisation de logiciels libres par jardins botaniques, réseaux de jardins, privés et institutions botaniques ou informatiques.
 
