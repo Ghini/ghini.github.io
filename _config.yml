@@ -11,3 +11,4 @@ github_username:  Ghini
 # Build settings
 markdown: kramdown
     
+theme: jekyll-theme-tactile
