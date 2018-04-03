@@ -1,12 +1,13 @@
 # Site settings
-title: Ghini Suite
+title: The Ghini Software Suite
 email: ghini@anche.no
 description: > # this means to ignore newlines until "baseurl:"
-  The Ghini Software Suite: helping botanical institutions keep track of their plants, data, and report production.
+  helping botanical institutions keep track of their plants, data, and report production.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ghini.github.io/" # the base hostname & protocol for your site
 twitter_username: Ghini_soft
 github_username:  Ghini
+facebook_username: bauble.thesoftware
 
 # Build settings
 markdown: kramdown
