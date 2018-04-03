@@ -16,7 +16,22 @@ collectors, etc. to manage their collection information.
 * **ghini.pocket** puts a snapshot of your database in your handheld device; it helps review your inventory.
 * **ghini.tour** assists garden visitors with a map and spoken virtual panels.
 
-In the good-old-bauble-days, we were only offering you the equivalent of
-ghini.desktop.  The centrally placed ghini.web was born in August 2012, more
-or less at the same time when I found out that bauble existed, and its
-development has gone so slow mostly because nobody was missing it.
+### some history?
+
+In the good-old-bauble-days (**2004**-**2009**), Bauble was a purely desktop
+program, with a couple of attempts to go web-based.
+
+In **August 2012** the now centrally placed ghini.web was born and that's
+how Ghini activity started.  Nevertheless, very soon after project
+inception, Ghini found out that Bauble existed, and chose to adopt it,
+rather than start from scratch.
+
+**2014** was mostly dedicated to ghini.web, using the very same database as
+the revived bauble.classic.
+
+In **2015** we shifted focus on bauble.desktop, now ghini.desktop.
+
+In **2016** we made ghini.web a garden aggregator, with its own mongo
+database, and chose to continue development under the unifying name Ghini.
+
+In **2017** we added mobile apps to the Ghini family.
