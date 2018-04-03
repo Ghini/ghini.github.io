@@ -45,7 +45,7 @@ Exportez vos données vers .pocket et utilisez-lui sur le terrain. De retour à 
 
 Les visites virtuelles offertes par Ghini sont toutes géographiques. Nous utilisons la carte communautaire OpenStreetMap comme carte de base pour à la fois g.tour et g.web. Modifiez les données de votre carte directement dans osm.org, communiquez l’emplacement des panneaux et les textes parlés à g.web, afin qu’il puisse les servir aux visiteurs qui ont installé ghini.tour dans leur téléphone Android ; exportez vos plantes les plus pertinentes de .dektop à .web. Accédez à [http://gardens.ghini.me/](http://gardens.ghini.me/) et passez en revue votre collection publiée, ou comparez-la à ce que autres jardins ont publié.
 
-## appuyer les réseaux
+## soutient la coopération en réseaux
 
 ghini.web est potentiellement un outil de fort soutien pour les réseaux botaniques. Il est conçu pour présenter plusieurs collections au même temps : à la vue plus dé-zoomé, vous sélectionnez les jardins en fonction des plantes qu’ils contiennent, puis à l’échelle du jardin, vous pouvez vérifier les objets individuels, ses propriétés et le précis emplacement géographique.
 
