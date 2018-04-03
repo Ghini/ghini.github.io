@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "enhancing mobile data collection"
+title:  "enhancing mobile data collection (pocket 1.5)"
 date:   2018-04-03 10:46 -05:00
 categories: software
 ---
