@@ -18,7 +18,7 @@ collectors, etc. to manage their collection information.
 
 ### some history?
 
-In the good-old-bauble-days (**2004**-**2009**), Bauble was a purely desktop
+In the good-old-bauble-days (**2005**-**2011**), Bauble was a purely desktop
 program, with a couple of attempts to go web-based.
 
 In **August 2012** the now centrally placed ghini.web was born and that's
