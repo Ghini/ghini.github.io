@@ -58,9 +58,9 @@ done
 
 # remaining arguments, should be one, is the timestamp
 
-date=$(date -I $1 2>/dev/null )
+date=$(date $1 +%Y-%m-%d)
 name=$date-$(echo $title 2>/dev/null | tr ' ' '-').md
-timestamp=$(date -Iminutes $1 2>/dev/null | sed -e 's/T/ /' -e 's/\(...:..\)$/ \1/')
+timestamp=$(date $1 +"%Y-%m-%d %H:%M")
 
 cat <<EOF >> _posts/$name
 ---
