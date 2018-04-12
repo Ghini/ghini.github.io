@@ -1,0 +1,722 @@
+commit af3f5379009125ac4af500474ec2fd5ae3baa5f9
+Merge: 983ef879 eb3df6f7
+Author: mfrasca <mario@anche.no>
+Date:   Fri Jan 26 07:27:39 2018 -0500
+version = "1.0.80"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0, as 1.0.80
+
+commit 983ef879c3514344a79649bcac7e328bee792bc2
+Merge: efd4e267 76d72cb9
+Author: mfrasca <mario@anche.no>
+Date:   Thu Jan 18 10:38:03 2018 -0500
+version = "1.0.79"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0, as 1.0.78
+
+commit efd4e26764d42ea1dc0afba6318b3f288b7b70f5
+Merge: a0855d18 55ef497e
+Author: mfrasca <mario@anche.no>
+Date:   Wed Jan 17 11:19:06 2018 -0500
+version = "1.0.78"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0, as 1.0.77
+
+commit a0855d18ce544a75d903e383a9d566a8b5a35724
+Merge: 38a14a32 7227e340
+Author: mfrasca <mario@anche.no>
+Date:   Sat Dec 16 13:09:17 2017 -0500
+version = "1.0.77"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0
+
+commit 38a14a324d5705d17f69b95c417582b370b92823
+Merge: 5ed4e34c 9ce0af9b
+Author: mfrasca <mario@anche.no>
+Date:   Sat Dec 16 12:46:38 2017 -0500
+version = "1.0.76"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0
+
+commit 5ed4e34c2d1be54a1d91b818b46ca537484e6bac
+Merge: b3755206 fde39857
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Mon Dec 4 08:54:55 2017 -0500
+version = "1.0.75"  # :bump
+
+    Merge pull request #298 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 9d3ecf3df0b2505ad27aa3c017246ded15f78bb2
+Merge: 4041b814 175b22dc
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Mon Oct 9 21:53:27 2017 -0500
+version = "1.0.74"  # :bump
+
+    Merge pull request #288 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 4041b814f84de295da79f052140952115ba31980
+Merge: d9fbb460 b71c3dcb
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Mon Oct 9 14:32:08 2017 -0500
+version = "1.0.73"  # :bump
+
+    Merge pull request #287 from Ghini/ghini-1.0-dev
+    
+    publish early - postscript labels
+
+commit 881c0d9e4b3a971296f2c1c918c176a0e008d45d
+Merge: d7041dd7 e4936907
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Wed Oct 4 07:03:19 2017 -0500
+version = "1.0.72"  # :bump
+
+    Merge pull request #281 from RoDuth/ghini-1.0-fix
+    
+    Ghini 1.0 plant notes fix
+
+commit d9fbb460ed11c7835b6dfb77587c044cf9cb5a6e
+Merge: 8079d5f6 b5578114
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Sun Sep 24 12:54:18 2017 -0500
+version = "1.0.72"  # :bump
+
+    Merge pull request #278 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 8079d5f6197316ed3f4d3fd7ce70f3c515062757
+Merge: 1bb47c5f e0952bdd
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Fri Sep 15 12:54:44 2017 -0500
+version = "1.0.70"  # :bump
+
+    Merge pull request #276 from Ghini/ghini-1.0-dev
+    
+    publish early
+
+commit 1bb47c5fd48cf3b3474ddd1077fd159692b6b755
+Merge: f508dc7a bedf409d
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Fri Sep 15 11:11:01 2017 -0500
+version = "1.0.69"  # :bump
+
+    Merge pull request #275 from Ghini/ghini-1.0-dev
+    
+    publish early
+
+commit f508dc7add6fc66b7814bf9090d3c525793141b7
+Merge: 95ac7236 7fef1060
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Wed Sep 13 10:53:56 2017 -0500
+version = "1.0.69"  # :bump
+
+    Merge pull request #269 from Ghini/ghini-1.0-dev
+    
+    urgent, small patch
+
+commit 95ac72369f8f3dc984232465b53c6b44e2d4ea34
+Merge: bd00d025 b7081598
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Mon Sep 11 11:53:47 2017 -0500
+version = "1.0.68"  # :bump
+
+    Merge pull request #265 from Ghini/ghini-1.0-dev
+    
+    publish early - we need ODK connectivity, and we know that tests are failing on travis-ci, we don't know the reason, and all is good here.
+
+commit a82a0c9c8fa9830cca3d51ad4d49ae2c8ee6df79
+Merge: 0e05e8f0 ab1ffc32
+Author: mfrasca <mario@anche.no>
+Date:   Tue Sep 5 16:49:14 2017 -0500
+version = "1.0.68"  # :bump
+
+    Merge branch 'ghini-1.0-dev' of github.com:Ghini/ghini.desktop into ghini-1.0-dev
+
+commit bd00d0258a47ef5f4f5b87de0a05b29f85bbe494
+Merge: 85af0f30 f6cb8d13
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Thu Aug 24 11:14:38 2017 -0500
+version = "1.0.68"  # :bump
+
+    Merge pull request #253 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 85af0f30daf23b81dbd631a0395571ec519cc69d
+Merge: e386893b 73dd5744
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Wed Aug 9 17:22:52 2017 -0500
+version = "1.0.67"  # :bump
+
+    Merge pull request #239 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit e386893b1f50d126c8b163f0477e4a21b4ca62a5
+Merge: 26a87acb da3af5ec
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Wed Aug 9 15:03:33 2017 -0500
+version = "1.0.66"  # :bump
+
+    Merge pull request #238 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit faef28362a3de7ec8a80120977de4a72ebec71ea
+Merge: 01d68c16 1f353a44
+Author: Mario Frasca <mario@anche.no>
+Date:   Thu Aug 3 16:00:39 2017 -0500
+version = "1.0.66"  # :bump
+
+    Merge branch 'ghini-1.0-dev' of github.com:Ghini/ghini.desktop into ghini-1.0-dev
+
+commit 26a87acbf55db3b5d6b757fe98367b570337b8c4
+Merge: db2dde12 1f353a44
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Thu Aug 3 09:38:55 2017 -0500
+version = "1.0.65"  # :bump
+
+    Merge pull request #229 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 70950240cffb133a7889402b3501aa42e75ada2f
+Merge: d65a4b35 c70fc7d8
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed Aug 2 08:48:15 2017 -0500
+version = "1.0.65"  # :bump
+
+    merging
+
+commit 37513282e653b57a54f6aa2438658db30e454ef5
+Merge: 0c4d8e58 f5b58421
+Author: Mario Frasca <mario@anche.no>
+Date:   Mon Jul 24 12:18:22 2017 -0500
+version = "1.0.65"  # :bump
+
+    merging
+
+commit d44c39153ced9b36191ce0c9f1e114b851f6d8b2
+Merge: 736934db f53c0cb9
+Author: Mario Frasca <mario@anche.no>
+Date:   Thu Jul 20 17:55:26 2017 -0500
+version = "1.0.65"  # :bump
+
+    merging
+
+commit 8afadb4769378a2c47ec9e8c4d5714fdcc092357
+Merge: decd730f 23126914
+Author: Mario Frasca <mario@anche.no>
+Date:   Tue Jul 18 10:31:36 2017 -0500
+version = "1.0.65"  # :bump
+
+    Merge branch 'ghini-1.0-dev' of github.com:Ghini/ghini.desktop into ghini-1.0-dev
+
+commit b7bd6dbacdb4ceb8c72461524c6552788e34645f
+Merge: 2bc25201 f447fffb
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Fri Jun 30 15:13:58 2017 -0500
+version = "1.0.64"  # :bump
+
+    Merge pull request #210 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 2bc2520184a39a6d3dd54d318c67c3a5e04c4ff8
+Merge: 8cc5f692 972f577d
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Sun Jun 4 20:41:47 2017 -0500
+version = "1.0.63"  # :bump
+
+    Merge pull request #185 from Ghini/ghini-1.0-dev
+    
+    publishing to 1.0 - correcting mistaken tests
+
+commit 8cc5f692f77b35575c990a7fc637e3efecedd3bd
+Merge: e15b6b14 a27112a8
+Author: Mario Frasca <mariotomo@gmail.com>
+Date:   Sun Jun 4 20:23:06 2017 -0500
+version = "1.0.63"  # :bump
+
+    Merge pull request #184 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit e15b6b14975f9fddf3490b819b1c5a25b1eed1fa
+Merge: 863a9b15 102510fa
+Author: Mario Frasca <mario@anche.no>
+Date:   Sat Sep 10 09:29:08 2016 -0500
+version = "1.0.62"  # :bump
+
+    Merge branch 'ghini-1.0-dev' into ghini-1.0
+
+commit 863a9b15c91ccce3d632a1c18d89f92f20b3d5f0
+Merge: 6631b5a9 cd5d6241
+Author: Mario Frasca <Mario Frasca>
+Date:   Wed Aug 3 15:44:08 2016 +0200
+version = "1.0.60"  # :bump
+
+    publishing to 1.0
+
+commit 041c8dafc19c958d60c0bec2f344a76d65ea66da
+Merge: 1f1acef6 bc1063bb
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Fri Apr 1 10:11:13 2016 +0200
+version = "1.0.59"  # :bump
+
+    Merge pull request #81 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 811a6585707c31235c4e7131a2944601753dc934
+Merge: 8a30b7e6 1f1acef6
+Author: Mario Frasca <mario@anche.no>
+Date:   Thu Mar 10 09:45:07 2016 +0100
+version = "1.0.58"  # :bump
+
+    correct divergent branches: merging 1.0 into 1.0-dev
+
+commit aeea8e21e9f530e200e23976a65f8e5b1268d9a0
+Merge: 405fd4e1 9e0f71fc
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Fri Jan 29 09:33:15 2016 -0500
+version = "1.0.58"  # :bump
+
+    Merge pull request #44 from Ghini/ghini-1.0-dev
+    
+    Ghini 1.0 dev
+
+commit 766704429959f4ea2d69803584ebf64c5b9d3fa8
+Merge: fa2c9c5d c8295bb7
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Thu Jan 28 17:04:35 2016 -0500
+version = "1.0.57"  # :bump
+
+    Merge pull request #41 from Ghini/ghini-1.0-dev
+    
+    publish to 1.0
+
+commit 1a2c779ee00f9b253fb12e61cfd6efec787ebf75
+Merge: 2f638b99 7b6c002f
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue Jan 26 11:33:14 2016 -0500
+version = "1.0.56"  # :bump
+
+    Merge pull request #37 from Ghini/issue-0034
+    
+    implementing the in operator for non-empty lists.
+
+commit 556866316e1e699b04a475d7a4250194a8323573
+Merge: 282d5f93 ae5cd90d
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed Jan 13 11:30:09 2016 -0500
+version = "1.0.56"  # :bump
+
+    merge bauble.classic into ghini.desktop
+
+commit c547d972b2e181c6590fb6ae05a9d3e214eb28a4
+Merge: 8ab48612 69a81453
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed Jan 6 08:23:25 2016 -0500
+version = "1.0.56"  # :bump
+
+    Merge pull request #262 from RoDuth/add-ALA-links
+    
+    (temporarily) accepting ALA links into master.
+    we should really keep this in a configuration section - #153
+
+commit c38c5ef1b1df12766729d4496d9f268370f0dc19
+Merge: 4d610e69 c5fc6e3a
+Author: Mario Frasca <mario@anche.no>
+Date:   Mon Dec 28 11:34:59 2015 -0500
+version = "1.0.54"  # :bump
+
+    Merge branch 'testing'
+
+commit ba351470633a1cfb84c498b07671a07147711a5a
+Merge: d77a6ed5 72551326
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon Nov 16 13:07:30 2015 -0600
+version = "1.0.53"  # :bump
+
+    Merge pull request #193 from jhonfitz/master
+    
+    partial solution to issue #168
+
+commit 1ede9c3f2a594aa69d3450331abd2f6bf3612651
+Merge: 8c3dc5b3 d61cbf0a
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue Sep 15 15:03:58 2015 -0500
+version = "1.0.50"  # :bump
+
+    Merge pull request #128 from Bauble/issue-0125
+    
+    Issue 0125
+
+commit f26e758f431a9a1beef02fdf376272ab434c64d0
+Merge: 1fd9e7a6 9a3b7113
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed Sep 9 08:31:35 2015 -0500
+version = "1.0.50"  # :bump
+
+    hopefully solving conflicts
+
+commit 5b7c8432ff5e95fd1f367ab5b2916e36c5be3ade
+Merge: f9e69f83 e5175810
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed Jun 10 06:47:20 2015 -0500
+version = "1.0.39"  # :bump
+
+    Merge pull request #83 from nijel/patch-1
+    
+    Remove po from gitignore
+
+commit 72257eca51ee2dd97641cd79c98ccf1f052cf447
+Merge: e40530f9 22759de0
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon Jun 8 18:01:36 2015 -0500
+version = "1.0.37"  # :bump
+
+    Merge pull request #80 from mfrasca/master
+    
+
+commit 22759de0a2ee57e7cc7d0bc3093b6e654e02657e
+Merge: bd8e933a e40530f9
+Author: Mario Frasca <mario@anche.no>
+Date:   Mon Jun 8 17:59:11 2015 -0500
+version = "1.0.37"  # :bump
+
+    Merge branch 'master' of https://github.com/Bauble/bauble.classic
+    
+    Conflicts:
+            po/id.po
+
+commit bd8e933aa329a85ca29e58b3823df700a20b984c
+Merge: b024c82c 3eae6108
+Author: Mario Frasca <mario@anche.no>
+Date:   Mon Jun 8 17:53:17 2015 -0500
+version = "1.0.37"  # :bump
+
+    Merge branch 'Bauble-master'
+
+commit 3eae610888376a70c12a87b311ec9a705aa97527
+Merge: b024c82c e232d9b4
+Author: Mario Frasca <mario@anche.no>
+Date:   Mon Jun 8 17:51:47 2015 -0500
+version = "1.0.37"  # :bump
+
+    Merge branch 'master' of https://github.com/Bauble/bauble.classic into Bauble-master
+    
+    Conflicts:
+            po/id.po
+
+commit 0988f2e3cbad790400e398d8affeeab3f4a1609e
+Merge: b8554fc9 4f06dd6c
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed Jun 3 11:57:56 2015 -0500
+version = "1.0.32"  # :bump
+
+    Merge branch 'bauble-1.0'
+    
+    Conflicts:
+            scripts/devinstall.bat
+
+commit 3b93a17ae3e9dd866a6c629201531627d9a5a422
+Merge: 5657c618 9c0c8e8b
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue Jun 2 11:25:49 2015 -0500
+version = "1.0.31"  # :bump
+
+    Merge pull request #66 from Bauble/master
+    
+    publish to 1.0
+
+commit 2a1f007e1f51bd9b1c0922364375e0b525341429
+Merge: b06f94e4 1b7f8f89
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sun May 31 20:56:35 2015 -0500
+version = "1.0.31"  # :bump
+
+    Merge pull request #95 from Bauble/master
+    
+    follow 'Bauble' version
+
+commit 1b7f8f892058f985ac2cf7763e4d3805b22764b2
+Merge: 44f84ecf b06f94e4
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sun May 31 20:08:08 2015 -0500
+version = "1.0.31"  # :bump
+
+    Merge pull request #34 from mfrasca/master
+    
+    Merge pull request #94 from Bauble/master
+
+commit 5657c61850926c53a6bf7f7cc9fdaf6d27725339
+Merge: dca24b6b 039c86cc
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sun May 31 14:11:53 2015 -0500
+version = "1.0.30"  # :bump
+
+    Merge pull request #46 from Bauble/master
+    
+    publish to 1.0
+
+commit 4c921010ea80a1272e4dd887e8c8ee8ee5e4b1ef
+Merge: e5f809d1 dca24b6b
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sat May 30 16:32:47 2015 -0500
+version = "1.0.29"  # :bump
+
+    Merge pull request #45 from Bauble/bauble-1.0
+    
+    Bauble 1.0
+
+commit e24b6aa0e4c551175be7549535f84c95ad1adbc3
+Merge: 43fcd129 e5f809d1
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sat May 30 16:12:24 2015 -0500
+version = "1.0.29"  # :bump
+
+    Merge pull request #44 from Bauble/master
+    
+    publish to 1.0
+
+commit 43fcd1290fd0abd349f657d30098cd0ffb7656ae
+Merge: 6ac6add6 1f021d59
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Fri May 29 20:42:37 2015 -0500
+version = "1.0.28"  # :bump
+
+    Merge pull request #43 from Bauble/master
+    
+    publish to 1.0
+
+commit 6ac6add6ebba88ea097edafddc0d3cb1fe75a939
+Merge: 464538cd 8aca2b68
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Thu May 28 16:56:11 2015 -0500
+version = "1.0.26"  # :bump
+
+    Merge pull request #40 from Bauble/master
+    
+    publish to 1.0
+
+commit 464538cd5718bd0619a75cbc8d0d5206605f89c4
+Merge: adba6840 d34743b5
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed May 27 10:31:05 2015 -0500
+version = "1.0.25"  # :bump
+
+    Merge pull request #38 from Bauble/master
+    
+    publish to 1.0
+
+commit adba684043a289605c747a6f73845ae697e2f41c
+Merge: 11066757 48a732ac
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue May 26 11:46:54 2015 -0500
+version = "1.0.23"  # :bump
+
+    Merge pull request #37 from Bauble/master
+    
+    publish to 1.0
+
+commit b06f94e41c96b1ff4ddac74820f86824c4722580
+Merge: 3c98c81d b7a0562d
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sun May 24 21:25:43 2015 -0500
+version = "1.0.23"  # :bump
+
+    Merge pull request #94 from Bauble/master
+    
+    follow 'Bauble' version
+
+commit 11066757c344eb1193ae4b052e75812ff888e1a8
+Merge: 2207f595 426ee425
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sat May 23 17:30:34 2015 -0500
+version = "1.0.22"  # :bump
+
+    Merge pull request #33 from Bauble/master
+    
+    publish to 1.0
+
+commit 2207f595c110e043641c7792ff43a7eb434c77f0
+Merge: 0201cf6d 0da06501
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Thu May 21 16:00:42 2015 -0500
+version = "1.0.21"  # :bump
+
+    Merge pull request #32 from Bauble/master
+    
+    publish to 1.0
+
+commit 0201cf6dee2aa0a9b91e2e042e654a1adbacce37
+Merge: b7781bf5 240a6cf0
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon May 18 11:44:46 2015 -0500
+version = "1.0.20"  # :bump
+
+    Merge pull request #29 from Bauble/master
+    
+    publish to 1.0
+
+commit b7781bf58fa95a888cb0307f4e47698511bb3af7
+Merge: 105f9a8b 6f960001
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Fri May 15 11:06:45 2015 -0500
+version = "1.0.20"  # :bump
+
+    Merge pull request #26 from Bauble/master
+    
+    urgent patch. #25.
+
+commit 105f9a8bf0508df6e2a844c181faceb52732764c
+Merge: 31312fa8 5d80dff1
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Thu May 14 15:16:23 2015 -0500
+version = "1.0.19"  # :bump
+
+    Merge pull request #24 from Bauble/master
+    
+    brief review with users, please update.
+
+commit 30bac0a6595c85cbf7b9eb759a848ae9d6b34cc6
+Merge: 74f8ff3d da0dc153
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed May 13 09:02:05 2015 -0500
+version = "1.0.17"  # :bump
+
+    Merge pull request #18 from Bauble/master
+    
+    just the icons and docs
+
+commit 74f8ff3da05e9962a949a1a040344ded2bbe38ab
+Merge: 18c1f2ee ad9eee54
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Sat May 9 19:36:23 2015 -0500
+version = "1.0.16"  # :bump
+
+    Merge pull request #14 from Bauble/master
+    
+    merge master into bauble-1.0
+
+commit 18c1f2ee8e3bc9c3f0dcd027daec2b6e4649e588
+Merge: 453cf6b5 55205ae3
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed May 6 17:57:54 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge branch 'master' into bauble-1.0
+
+commit 55205ae3770e68a8d02cbb96c5d00e9f7bec0a50
+Merge: fe9e1b27 453cf6b5
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed May 6 17:56:49 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge branch 'bauble-1.0'
+    
+    Conflicts:
+            scripts/devinstall.sh
+
+commit c8c41bf1c1f6347bd42671a4d40a9318bd0063db
+Merge: 213aee16 3c98c81d
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed May 6 16:26:41 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #12 from mfrasca/master
+    
+    moved most of the development to Bauble the organization
+
+commit 490cc2077c83a7c204f0fb022dc629df85edbe5b
+Merge: ab86d90f 374ffd57
+Author: Mario Frasca <mario@anche.no>
+Date:   Wed May 6 09:10:40 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge branch 'master' of github.com:Bauble/bauble.classic
+
+commit ebcc880859cceb539777727343b92d43bf9f1ef9
+Merge: ec541de8 560b1946
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue May 5 20:00:17 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #91 from Bauble/master
+    
+    follow 'Bauble' version
+
+commit 453cf6b5cee18d6cfdc466300c1bda4d360ba5d4
+Merge: f28f6ac3 560b1946
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Tue May 5 18:41:26 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #11 from Bauble/master
+    
+    1.0.15
+
+commit 1fd6ce20f848686cff9ae8463e5a9cda6c9d8526
+Merge: 00cd9feb ec541de8
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon May 4 17:49:16 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #10 from mfrasca/master
+    
+    publish work to "organization" repository.
+
+commit f28f6ac32a34cadcdb96acae90514d4f587045ce
+Merge: 00cd9feb a8d76c21
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon May 4 17:47:09 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #9 from mfrasca/bauble-1.0
+    
+    Bauble 1.0
+
+commit a8d76c2195e0bc4ba52a659c0f41ba829e7219dc
+Merge: 860462b7 ec541de8
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Mon May 4 17:43:27 2015 -0500
+version = "1.0.15"  # :bump
+
+    Merge pull request #90 from mfrasca/master
+    
+    publish to 1.0
+
+commit 860462b7455e40871e96af9ff9d18c5eb1c39e22
+Merge: 4ea4266b ce8ea2ec
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed Apr 29 16:21:05 2015 -0500
+version = "1.0.13"  # :bump
+
+    Merge pull request #87 from mfrasca/master
+    
+    update 1.0
+
+commit 2740484091abdb1420d85c0fff28fc35b1cffb01
+Merge: c25090d7 35ab8296
+Author: Mario Frasca <mfrasca@zonnet.nl>
+Date:   Wed Apr 29 15:06:13 2015 -0500
+version = "1.0.13"  # :bump
+
+    Merge pull request #74 from mfrasca/bauble-1.0
+    
+    Bauble 1.0
+
+commit 78d488bb332e659122a09c1695eb8456e83a8837
+Merge: ec2a19ba 2f15bb9f
+Author: Mario Frasca <mario@anche.no>
+Date:   Thu Apr 23 14:32:30 2015 -0500
+version = "1.0.13"  # :bump
+
+    Merge remote-tracking branch 'origin/master'
+

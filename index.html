@@ -11,9 +11,12 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <div class="with-image">
+          <img src="/images/{{ post.categories }}.png" />
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </div>
       </li>
     {% endfor %}
   </ul>

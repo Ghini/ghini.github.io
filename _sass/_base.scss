@@ -204,3 +204,16 @@ pre {
         }
     }
 }
+
+.with-image img {
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: #555;
+}
+
+.with-image h1 h2 h3 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
