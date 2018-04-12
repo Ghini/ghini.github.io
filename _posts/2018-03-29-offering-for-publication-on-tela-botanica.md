@@ -2,7 +2,7 @@
 layout: post
 title:  "offering for publication on tela-botanica"
 date:   2018-03-29 11:15 -05:00
-categories: software
+categories: network
 ---
 
 [Tela botanica](http://www.tela-botanica.org/) is **the** network for the French-speaking botanic world,

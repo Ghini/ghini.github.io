@@ -2,7 +2,7 @@
 layout: post
 title:  "fast batch insertion"
 date:   2018-01-26 14:27 -05:00
-categories: software
+categories: proud
 ---
 
 who said that keeping track of your botanic data was difficult?

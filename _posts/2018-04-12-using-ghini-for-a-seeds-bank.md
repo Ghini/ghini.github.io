@@ -2,7 +2,7 @@
 layout: post
 title:  "using ghini for a seeds bank"
 date:   2018-04-12 09:49
-categories: software
+categories: idea
 ---
 
 We often come in contact with groups doing seeds, not plants, and we finally

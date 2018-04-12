@@ -2,7 +2,7 @@
 layout: post
 title:  "project ownership"
 date:   2015-09-04 09:02 -0400
-categories: software
+categories: geek
 ---
 
 On 09/04/2015 08:02 AM, Brett wrote:

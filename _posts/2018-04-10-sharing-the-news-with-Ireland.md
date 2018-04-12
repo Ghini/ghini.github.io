@@ -2,7 +2,7 @@
 layout: post
 title:  "sharing the news with Ireland"
 date:   2018-04-10 07:58-0500
-categories: software
+categories: network
 ---
 
 Good morning everyone,

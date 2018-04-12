@@ -2,7 +2,7 @@
 layout: post
 title:  "just added a facebook page"
 date:   2015-05-03 14:37 -05:00
-categories: software
+categories: network
 ---
 
 so, we just added a Facebook page.  we're going to publicise our activities

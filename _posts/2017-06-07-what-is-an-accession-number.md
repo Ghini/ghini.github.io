@@ -2,7 +2,7 @@
 layout: post
 title:  "what is an accession number"
 date:   2017-06-07 08:59 -05:00
-categories: software
+categories: idea
 ---
 
 Wikipedia had a generic page related to accession numbers, not specific to

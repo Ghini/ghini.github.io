@@ -2,7 +2,7 @@
 layout: post
 title:  "connecting desktop to web"
 date:   2016-01-12 08:28 -0500
-categories: software
+categories: proud
 ---
 
 this already "sort of works" in the sense that:

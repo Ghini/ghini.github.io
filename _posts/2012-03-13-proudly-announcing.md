@@ -2,7 +2,7 @@
 layout: post
 title:  "Proudly announcing »Ghini sort of works«"
 date:   2014-03-12 16:07 -0500
-categories: software
+categories: proud
 ---
 
 we have a working prototype, running on heroku, showing plants from the

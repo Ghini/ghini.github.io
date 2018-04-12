@@ -2,7 +2,7 @@
 layout: post
 title:  "desktop back on track"
 date:   2014-01-24 17:03 -0500
-categories: software
+categories: proud
 ---
 
 We can again use Bauble, so we're happy.
