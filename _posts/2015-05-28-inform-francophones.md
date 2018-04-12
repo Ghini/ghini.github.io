@@ -2,7 +2,7 @@
 layout: post
 title:  "inform francophones"
 date:   2015-05-28 14:27 -05:00
-categories: software
+categories: network
 ---
 
 since we've done a new start at translating software and this time also the

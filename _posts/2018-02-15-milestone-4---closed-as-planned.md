@@ -2,7 +2,7 @@
 layout: post
 title:  "milestone 4 - closed as planned"
 date:   2018-02-15 17:00 -05:00
-categories: software
+categories: proud
 ---
 
 the intention two months ago was to close this milestone after two months, that's today.

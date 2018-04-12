@@ -2,7 +2,7 @@
 layout: post
 title:  "Ghini born in the Netherlands"
 date:   2012-08-24 23:20 +0200
-categories: software
+categories: proud
 ---
 
 a web based interface to botanical garden databases

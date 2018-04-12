@@ -2,7 +2,7 @@
 layout: post
 title:  "digging for networks"
 date:   2016-09-23 12:00 -05:00
-categories: software
+categories: network
 ---
 
 I have been digging for information, this was during the Panama regional

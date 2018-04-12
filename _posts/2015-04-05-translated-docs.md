@@ -2,7 +2,7 @@
 layout: post
 title:  "making a start at translated docs"
 date:   2015-04-05 16:00 -0500
-categories: software
+categories: languages
 ---
 
 I just entered Ecuador, in the hope to find interested gardens here.
