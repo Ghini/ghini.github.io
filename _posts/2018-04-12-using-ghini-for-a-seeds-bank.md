@@ -12,4 +12,6 @@ docs](http://ghini.readthedocs.io/en/ghini-1.0-dev/use_cases.html#using-ghini-fo
 
 All terms still apply, you just have to read some of them slightly differently.
 
+![a seed bank, as Ghini can also help maintain](/images/Seedbank.jpg)
+
 Enjoy, and feedback.
