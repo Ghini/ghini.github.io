@@ -9,7 +9,8 @@ Now this is something practical.
 
 That old remark by one of our German users, about grouping objects under the
 same Acquisition object, no, we didn't do that, we can't do that without a
-change in the database structure, and I am still procrastinating on that.
+change in the database structure, and I am still procrastinating on database
+structure changes.
 
 But now we have something coming quite close to it, for all objects that
 share equally worded notes.
@@ -26,4 +27,4 @@ so once again, imagination is the limit.
 
 check the video:
 
-[![seeds bank](/images/seeds-bank.png)](https://youtu.be/HhvelKic5Rs)
+[![seeds bank](/images/mpv-shot0001.jpg)](https://youtu.be/HhvelKic5Rs)
