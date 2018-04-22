@@ -21,7 +21,7 @@ No, I'm not kidding, and here, in sequence, why...
   - los jardines compiten entre ellos
 
 - compramos un software
-  - el programa adquirido es propiedad del jardín, y cada jardín tiene derecho a adaptar, ampliar, y compartir
+  - el programa adquirido es propiedad de la comunidad, y cada jardín tiene derecho a adaptar, ampliar, y compartir
   - el programa adquirido es propiedad de la empresa y el jardín tiene licencia de uso, con limitaciones
 
 - tenemos una idea y falta en el software y hay presupuesto entre varios jardines
