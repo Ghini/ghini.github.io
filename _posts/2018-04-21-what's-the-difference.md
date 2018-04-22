@@ -2,7 +2,7 @@
 layout: post
 title:  "what's the difference"
 date:   2018-04-21 15:07
-categories: software
+categories: idea
 ---
 
 So you live in a developing country, you run a botanical garden, and you are
