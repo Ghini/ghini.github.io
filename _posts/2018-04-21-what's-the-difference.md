@@ -12,8 +12,7 @@ about I urged you to think twice, and to refuse?
 
 No, I'm not kidding, I'm comparing 
 
-| ![freedom](/images/meditate-64.png) | a meditated decision, with    |
-| ![dependency](/images/money-64.png) | money based considerations.   |
+| ![freedom](/images/meditate-64.png) | a meditated decision, with money based considerations.  | ![dependency](/images/money-64.png) |
 
 --------------------------------
 
