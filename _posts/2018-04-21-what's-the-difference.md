@@ -5,8 +5,8 @@ date:   2018-04-21 15:07
 categories: idea
 ---
 
-So you live in a developing country, you run a botanical garden, and you are
-offered tens of thousand dollars, all for you to buy a specific commercial
+So you run a botanical garden, you're structurally short of money, and you are
+offered tens of thousand dollars, all for you to buy *a specific commercial*
 software for plant database management.  A beautiful gift, isn't it?  What
 about I urged you to think twice, and to refuse?
 
