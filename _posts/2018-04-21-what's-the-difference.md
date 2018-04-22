@@ -36,11 +36,11 @@ No, I'm not kidding, I'm comparing
 | ![freedom](/images/meditate.png) | sin esta plata, te bajas el software, y eres dueño de lo que tienes.   |
 | ![dependency](/images/money.png) | con esta plata te compras algo, te quedas sin plata, y además con algo que no es tuyo.   |
 | | **pero si es un producto profesional**   |
-| ![freedom](/images/meditate-64.png) | GNU/Linux, software libre, estaba en el 2016 en uso en 499 de las 500 computadoras más poderosas del mundo.  La otra creo que la pasaron a Linux el año siguiente.   |
-| ![dependency](/images/money-64.png) | Windows, software comercial, yo sinceramente no lo considero un producto profesional.  comercial sí, pero es otra cosa que profesional?   |
+| ![freedom](/images/meditate-64.png) | GNU/Linux, software libre, estaba en el 2016 en uso en 498 de las 500 computadoras más poderosas del mundo.  Las últimas dos (con AIX) [salieron de la lista el año siguiente](https://linux.slashdot.org/story/17/11/14/2223227/all-500-of-the-worlds-top-500-supercomputers-are-running-linux).   |
+| ![dependency](/images/money-64.png) | “Since November 2015, no computer on the [500] list runs Windows”. Pues cierto, Windows es software comercial, y habrá alguien que lo considere un producto profesional?  |
 | | **Tal vez no sabías que...**   |
 | ![freedom](/images/meditate-64.png) | Android es Linux.  |
 | ![dependency](/images/money-64.png) | Windows Phone murió el 9 de octubre del 2017.  |
-| | **Tal vez no sabías que...**   |
-| ![freedom](/images/meditate-64.png) | Ghini corre en GNU/Linux, OSX, Windows y utiliza la base datos que prefieres.  |
-| ![dependency](/images/money-64.png) | Cuan poca es la libertad que te ofrece la competencia comercial.  |
+| | **Pero yo no quiero pasar a Linux**   |
+| ![freedom](/images/meditate-64.png) | Quien dijo esto.  Nosotros trabajamos en GNU/Linux, pero Ghini está dibujado para correr igualmente bien en OSX y Windows, y utiliza la base datos que prefieres.  |
+| ![dependency](/images/money-64.png) | … la competencia comercial, que tanta libertad te ofrece?  |
