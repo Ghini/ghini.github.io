@@ -10,39 +10,50 @@ offered tens of thousand dollars, all for you to buy a specific commercial
 software for plant database management.  A beautiful gift, isn't it?  What
 about I urged you to think twice, and to refuse?
 
-No, I'm not kidding, and here, in sequence, why...
+No, I'm not kidding, I'm comparing 
 
-- given the situation
-  - what to do if thinking of free software
-  - what to do with a commercial solution
+| ![freedom](/images/meditate-64.png) | a meditated decision, with  |
+| ![dependency](/images/money-64.png) | money based considerations. |
 
-- hay presupuesto a disposición (Estado, U.E., EE.UU.)
-  - los jardines se ponen de acuerdo para un proyecto común
-  - los jardines compiten entre ellos
 
-- compramos un software
-  - el programa adquirido es propiedad de la comunidad, y cada jardín tiene derecho a adaptar, ampliar, y compartir
-  - el programa adquirido es propiedad de la empresa y el jardín tiene licencia de uso, con limitaciones
+hay presupuesto a disposición (Estado, U.E., EE.UU.)
+==============================================================
 
-- tenemos una idea y falta en el software y hay presupuesto entre varios jardines
-  - juntos con otros jardines mejoramos el software y compartimos la mejora
-  - cada jardín explica al propietario del software su necesidad y esta mejora se vuelve parte del software, como opción adicional a precio adicional.
+| ![freedom](/images/meditate.png) | los jardines se ponen de acuerdo para un proyecto común |
+| ![dependency](/images/money.png) | los jardines compiten entre ellos |
 
-- hay una nueva versión del software adoptado
-  - pongo al día mi instalación
-  - espero hasta que haya presupuesto para comprar nueva licencia
+compramos un software
+===============================
 
-- el propietario del software desaparece
-  - el jardín es él mismo propietario del software
-  - que pena, tendremos que migrar a otro, cuando tengamos plata
+| ![freedom](/images/meditate.png) | el programa adquirido es propiedad de la comunidad, y cada jardín tiene derecho a adaptar, ampliar, y compartir |
+| ![dependency](/images/money.png) | el programa adquirido es propiedad de la empresa y el jardín tiene licencia de uso, con limitaciones |
 
-- pero si me regalaron $15k, eso es plata
-  - sin esta plata, te bajas el software, y eres dueño de lo que tienes.
-  - con esta plata te compras algo, te quedas sin plata, y además con algo que no es tuyo.
+tenemos una idea y falta en el software y hay presupuesto entre varios jardines
+=============================================================================================
+
+| ![freedom](/images/meditate.png) | juntos con otros jardines mejoramos el software y compartimos la mejora |
+| ![dependency](/images/money.png) | cada jardín explica al propietario del software su necesidad y esta mejora se vuelve parte del software, como opción adicional a precio adicional. |
+
+hay una nueva versión del software adoptado
+==============================================================
+
+| ![freedom](/images/meditate.png) | pongo al día mi instalación |
+| ![dependency](/images/money.png) | espero hasta que haya presupuesto para comprar nueva licencia |
+
+el propietario del software desaparece
+==============================================================
+
+| ![freedom](/images/meditate.png) | la comunidad es propietaria del software |
+| ![dependency](/images/money.png) | que pena, tendremos que migrar a otro, cuando tengamos plata |
+
+pero si me regalaron $15k, eso es plata
+==============================================================
+
+| ![freedom](/images/meditate.png) | sin esta plata, te bajas el software, y eres dueño de lo que tienes. |
+| ![dependency](/images/money.png) | con esta plata te compras algo, te quedas sin plata, y además con algo que no es tuyo. |
   
-- pero es un producto profesional
-  - GNU/Linux, software libre, estaba en el 2016 en uso en 499 de las 500
-    computadoras más poderosas del mundo.  La otra creo que la pasaron a
-    Linux el año siguiente.
-  - Windows, software comercial, yo sinceramente no lo considero un producto
-    profesional.  comercial sí, pero es otra cosa que profesional?
+pero si es un producto profesional
+======================================
+
+| ![freedom](/images/meditate-64.png) | GNU/Linux, software libre, estaba en el 2016 en uso en 499 de las 500 computadoras más poderosas del mundo.  La otra creo que la pasaron a Linux el año siguiente. |
+| ![dependency](/images/money-64.png) | Windows, software comercial, yo sinceramente no lo considero un producto profesional.  comercial sí, pero es otra cosa que profesional? |
