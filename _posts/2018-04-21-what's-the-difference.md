@@ -45,7 +45,7 @@ No, no estoy loco, y no es en broma, estoy comparando
 |||
 | | **Pero si es un producto profesional**   |
 | ![freedom](/images/meditate-64.png) | GNU/Linux, software libre, estaba en el 2016 en uso en 498 de las 500 computadoras más poderosas del mundo.  Las últimas dos (con AIX) [salieron de la lista el año siguiente](https://linux.slashdot.org/story/17/11/14/2223227/all-500-of-the-worlds-top-500-supercomputers-are-running-linux).   |
-| ![dependency](/images/money-64.png) | “Since November 2015, no computer on the [500] list runs Windows”. Pues cierto, Windows es software comercial, y habrá alguien que lo considere un producto profesional?  |
+| ![dependency](/images/money-64.png) | [“Since November 2015, no computer on the [500] list runs Windows”](https://en.wikipedia.org/wiki/TOP500). Pues cierto, Windows es software comercial, y habrá alguien que lo considere un producto profesional?  |
 |||
 | | **Tal vez no sabías que...**   |
 | ![freedom](/images/meditate-64.png) | Android es Linux.  |
