@@ -1,18 +1,20 @@
 ---
 layout: post
-title:  "what's the difference"
+title:  "Pensando en los reales beneficios"
 date:   2018-04-21 15:07
 categories: idea
 ---
 
-So you run a botanical garden, you're structurally short of money, and you are
-offered tens of thousand dollars, all for you to buy *a specific commercial*
-software for plant database management.  A beautiful gift, isn't it?  What
-about I urged you to think twice, and to refuse?
+Así que usted está encargado de un jardín botánico, siempre tiene que
+medirse con un presupuesto demasiado limitado, y le están ofreciendo miles y
+miles de dólares, todo para su jardín, todo para comprar una *bien
+específica* solución software *comercial*, para el manejo de su base de
+datos.  No hay que dejar ir una tal oportunidad, no es cierto?  Y que tal si
+le dijera de pensarlo mejor, y rechazar?
 
-No, I'm not kidding, I'm comparing 
+No, no estoy loco, y no es en broma, estoy comparando 
 
-| ![freedom](/images/meditate-64.png) | a meditated decision | **←:→** | with money based considerations | ![dependency](/images/money-64.png) |
+| ![freedom](/images/meditate-64.png) | una decisión meditada  | **←:→** | con consideraciones simplemente económicas | ![dependency](/images/money-64.png) |
 
 --------------------------------
 
