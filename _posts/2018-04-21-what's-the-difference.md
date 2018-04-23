@@ -18,24 +18,24 @@ No, I'm not kidding, I'm comparing
 
 |||
 || **Hay presupuesto a disposición (Estado, U.E., EE.UU.)**     |
-| ![freedom](/images/meditate-64.png) | Los jardines se ponen de acuerdo para un proyecto común     |
-| ![dependency](/images/money-64.png) | Los jardines compiten entre ellos     |
+| ![freedom](/images/meditate-64.png) | Los jardines se ponen de acuerdo para un proyecto común.   |
+| ![dependency](/images/money-64.png) | Los jardines compiten entre ellos.   |
 |||
 | | **Compramos un software**     |
-| ![freedom](/images/meditate-64.png) | El programa adquirido es propiedad de la comunidad, y cada jardín tiene derecho a adaptar, ampliar, y compartir     |
-| ![dependency](/images/money-64.png) | El programa adquirido es propiedad de la empresa y el jardín tiene licencia de uso, con limitaciones              |
+| ![freedom](/images/meditate-64.png) | El programa adquirido es propiedad de la comunidad, y cada jardín tiene derecho a adaptar, ampliar, y compartir.   |
+| ![dependency](/images/money-64.png) | El programa adquirido es propiedad de la empresa y el jardín tiene licencia de uso, con limitaciones.   |
 |||
 | | **Tenemos una idea y falta en el software y hay presupuesto entre varios jardines**     |
-| ![freedom](/images/meditate-64.png) | Juntos con otros jardines mejoramos el software y compartimos la mejora     |
+| ![freedom](/images/meditate-64.png) | Juntos con otros jardines mejoramos el software y compartimos la mejora.   |
 | ![dependency](/images/money-64.png) | Cada jardín explica al propietario del software su necesidad y esta mejora se vuelve parte del software, como opción adicional a precio adicional.     |
 |||
 | | **Hay una nueva versión del software adoptado**   |
-| ![freedom](/images/meditate-64.png) | Pongo al día mi instalación   |
-| ![dependency](/images/money-64.png) | Espero hasta que haya presupuesto para comprar nueva licencia   |
+| ![freedom](/images/meditate-64.png) | Pongo al día mi instalación.   |
+| ![dependency](/images/money-64.png) | Espero hasta que haya presupuesto para comprar nueva licencia.   |
 |||
 | | **El propietario del software desaparece**   |
-| ![freedom](/images/meditate-64.png) | La comunidad es propietaria del software   |
-| ![dependency](/images/money-64.png) | Que pena, tendremos que migrar a otro, cuando tengamos plata   |
+| ![freedom](/images/meditate-64.png) | La comunidad es propietaria del software.   |
+| ![dependency](/images/money-64.png) | Que pena, tendremos que migrar a otro, cuando tengamos plata.   |
 |||
 | | **Pero si me regalaron $15k, eso es plata**   |
 | ![freedom](/images/meditate-64.png) | Sin esta plata, te bajas el software, y eres dueño de lo que tienes.   |
