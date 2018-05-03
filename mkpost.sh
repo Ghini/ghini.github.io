@@ -70,9 +70,6 @@ date:   $timestamp
 categories: $category
 ---
 
-
-![$picture](/images/$date-$picture)
-
 EOF
 
 emacsclient -n _posts/$name
