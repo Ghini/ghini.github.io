@@ -5,7 +5,7 @@ date:   2018-05-03 09:37
 categories: languages
 ---
 
-This is just a word of thanks to our translators, almost 20, and that's only
+This is a word of thanks to our translators, almost 20, and that's only
 counting the ones known to
 [Weblate](https://hosted.weblate.org/projects/ghini/):
 
@@ -18,8 +18,8 @@ pCsOrI  (Korean); Yura (Ukrainian); ZeroAurora (Chinese); anonymous
 And huge thanks to Michal Čihař, who's been contributing translations and
 corrections in several languages (Czech, Danish, French, German, Polish,
 Portuguese, Spanish, Vietnamese), but has also authors and promotes the
-[WebLate](https://github.com/WeblateOrg/weblate) software, and offers the
-service we rely upon.
+[Weblate](https://github.com/WeblateOrg/weblate) software, and offers the
+translation platform we rely upon.
 
 ![screenshot@20180503102050](/images/2018-05-03-thank-you-translators-20180503102050.png)
 
