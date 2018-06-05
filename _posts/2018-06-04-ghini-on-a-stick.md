@@ -2,7 +2,7 @@
 layout: post
 title:  "ghini on a stick"
 date:   2018-06-04 16:45
-categories: cool
+categories: proud
 ---
 
 Last few weeks working at two separate issues, a larger one where I've been
