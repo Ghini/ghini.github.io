@@ -26,6 +26,6 @@ same way, but also:
 so once again, imagination is the limit.
 
 the following video, admittedly longish, shows how to prepare a seeds
-shipping, and at the last 30s it shows the feature here mentioned:
+shipping, while it its last 30s it shows the feature here mentioned:
 
-[![seeds bank](/images/mpv-shot0001.jpg)](https://youtu.be/HhvelKic5Rs)
+[![seeds bank](/images/mpv-shot0001.jpg)](https://youtu.be/HhvelKic5Rs?t=623)
