@@ -47,11 +47,43 @@ the same pics we took with PlantSnap.  also PictureThis correctly identified
 our Mango and Coffee, and not the other plants.
 
 one remark from Seralia, our botanist, was while taking the picture of the
-mistery Piperacea: "not just the leave, you need show the nodes, and you
-need show that leaves are alternating."  well, the software at PictureThis
-offered as possible match for this Piperacea several plant species with very
-similar leaves, but opposite, not alternate.  we can't judge PlantSnap
-because it didn't manage to propose anything.
+mistery Piperacea: "don't take just the leaves, you need to show the nodes,
+and you need show that leaves are alternating."  well, the software at
+PictureThis offered as possible match for this Piperacea several plant
+species with very similar leaves, but opposite, not alternate, and
+regardless the shape of the nodes.  
+
+better than PlantSnap?  PlantSnap didn't manage to propose anything.  but
+yes, better: PictureThis is 40% lighter than PlantSnap and did not freeze
+the phone.
+
+one more bright side of this one, it feels like a collaborative platform,
+and not one where your efforts are greedily monetized by others, as was my
+feeling with PlantSnap.  somehow also PictureThis is a commercial
+enterprise, but not in an invasive way.  
+
+we didn't check the copyright status of the data you provide, do you keep
+ownership and agree on a license, or you just provide the information and
+PictureThis becomes its owner?  we ask this question, because depending on
+the answer, you know whether you are participating to a community, or you're
+putting value into a company.
 
 - PlantNet
+
+we put PlantNet in the crosshairs after we realized that both PictureThis
+and PlantSnap were but a client of a remote expert system.  we really
+intended to test Android apps that you could run on your phone while deep in
+the bushes, we're not insterested in a client-server interaction based on
+a reliable internet connection, even less a broadband connection.
+
+PlantNet comes as both on-line expert system and as remote server of a
+installable client.  The client is less than 4Mbytes, that's 85% lighter
+than PlantSnap and more than 70% lighter than PictureThis.
+
+plantnet.org is part of Floris'Tic, a non commercial organization, based in
+France, sponsored by several French scientific public institutions, and
+endorsed by tela-botanica, the largest French-speaking botanic community.
+
+anyhow, we hope to review PlantNet soon, in the meanwhile check it for
+yourself, at https://identify.plantnet-project.org/
 
