@@ -9,7 +9,12 @@ chiuso milestone Tanager-2018-08, ovviamente non ho concluso tutti i 36 bug
 che ci avevo infilato, davvero non era nemmeno un eccesso di ottimismo, era
 puro e semplice irrealismo.  10.  dieci mi sembra un buon numero,
 considerato l'impatto che alcuni di loro hanno sul software e la
-documentazione.  vediamoli in dettaglio, raggruppati.
+documentazione.  
+
+sono tutti relativi alla linea di sviluppo 3.1, ma un paio li ho anche
+applicati alla 1.0, qui marcati con il testo `[1.0]`.
+
+vediamoli in dettaglio, raggruppati.
 
 ### produzione di rapporti
 
@@ -73,7 +78,7 @@ django!
 
 non in grado di rompere la funzionalità del programma, ma abbastanza per
 creare problemi in casi particolari:
-[392](https://github.com/Ghini/ghini.desktop/issues/392).  
+[392](https://github.com/Ghini/ghini.desktop/issues/392).  `[1.0]`.
 
 un altro invece decisamente serio, nella linea giustamente ancora non
 pubblicata 3.1: [361](https://github.com/Ghini/ghini.desktop/issues/361).
@@ -83,10 +88,11 @@ pubblicata 3.1: [361](https://github.com/Ghini/ghini.desktop/issues/361).
 
 [404](https://github.com/Ghini/ghini.desktop/issues/404), dopo tanto tempo
 che ne parlavo, finalmente ho pubblicato un database di esempio, relativo
-all'orto informale "el Cuchubo" in Mompox, Colombia.
+all'orto informale "el Cuchubo" in Mompox, Colombia.  `[1.0]`.
 
 [386](https://github.com/Ghini/ghini.desktop/issues/386), o come essere
-chiari con chi pensa in maniera diversa da te.  la cosa migliore è quando mi
-si dica "scusa, non ho capito".
+chiari con chi pensa in maniera diversa da te.  la cosa migliore quando non
+mi si capisce, è che mi si dica "scusa, non ho capito", eventualmente anche
+senza lo "scusa".  `[1.0]`.
 
 as always: enjoy.
