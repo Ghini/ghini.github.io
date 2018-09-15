@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pensando en los reales beneficios"
+title:  "(es) Pensando en los reales beneficios"
 date:   2018-04-21 15:07
 categories: idea
 ---
