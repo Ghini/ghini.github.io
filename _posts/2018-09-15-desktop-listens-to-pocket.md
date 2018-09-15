@@ -28,7 +28,9 @@ interface, while constantly reviewing the documentation, then go in the
 technical details, constantly keeping an eye on the user manual, so that it
 would still match with the evolving idea.
 
-Read all about it in the manual, and test it by yourself, installing the
-(still unstable) ghini-3.1 version.  I am considering porting this back to
-the ghini-1.0 line, just not quite yet.
+Read all about it in its [manual
+page](https://ghini.readthedocs.io/en/ghini-3.1-dev/imex.html#managing-ghini-pocket-interaction),
+test it by yourself, installing the (still unstable) ghini-3.1 version,
+share your mind.  I am considering porting this back to the ghini-1.0 line,
+just not quite yet.
 
