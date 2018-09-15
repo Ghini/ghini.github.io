@@ -21,7 +21,7 @@ Start the server on ghini.desktop, register your Android device, send your
 collected data (inventory, corrections, pictures), get the new database
 snapshot back on ghini.pocket.
 
-![screenshot@20180915171903](images/2018-09-15-desktop-listens-to-pocket-20180915171903.png)
+![screenshot@20180915171903](/images/2018-09-15-desktop-listens-to-pocket-20180915171903.png)
 
 I started by first documenting the functionality, then designing the user
 interface, while constantly reviewing the documentation, then go in the
