@@ -15,7 +15,7 @@ A once in lifetime opportunity, isn't it?
 
 What if I came here with reasons to refuse?
 
-I'm not mad, let us consider together.
+No, I've not gone crazy, let us consider together.
 
 | ![freedom](/images/meditate-64.png) | a meditated decision  | **←:→** | against money considerations | ![dependency](/images/money-64.png) |
 
