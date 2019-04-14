@@ -36,6 +36,7 @@ database, and chose to continue development under the unifying name Ghini.
 
 In **2017** we added mobile apps to the Ghini family.
 
-In **2018** we moved most active development to ghini-3.1, backporting to
-ghini-1.0.  ghini-3.1 is python3 based, and sports some geographic awareness
-right on the desktop.
+In **2018** most active development went into integrating the new mobile
+apps with the desktop manager, and into writing ghini-3.1: python3 and gtk3
+based, and compatible with PostGIS.  as far as possible, all new features
+get backported to ghini-1.0.
