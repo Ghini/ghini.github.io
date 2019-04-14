@@ -29,9 +29,13 @@ rather than start from scratch.
 **2014** was mostly dedicated to ghini.web, using the very same database as
 the revived bauble.classic.
 
-In **2015** we shifted focus on bauble.desktop, now ghini.desktop.
+In **2015** we shifted focus on bauble.classic, now ghini.desktop.
 
 In **2016** we made ghini.web a garden aggregator, with its own mongo
 database, and chose to continue development under the unifying name Ghini.
 
 In **2017** we added mobile apps to the Ghini family.
+
+In **2018** we moved most active development to ghini-3.1, backporting to
+ghini-1.0.  ghini-3.1 is python3 based, and sports some geographic awareness
+right on the desktop.
