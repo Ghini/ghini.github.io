@@ -29,14 +29,16 @@ rather than start from scratch.
 **2014** was mostly dedicated to ghini.web, using the very same database as
 the revived bauble.classic.
 
-In **2015** we shifted focus on bauble.classic, now ghini.desktop.
+In **2015** we shifted focus on bauble.classic, now ghini.desktop.  Plants
+and Species can now have associated pictures.
 
 In **2016** we made ghini.web a garden aggregator, with its own mongo
 database, and chose to continue development under the unifying name Ghini.
 
-In **2017** we added mobile apps to the Ghini family.
+In **2017** we added mobile apps to the Ghini family.  More import/export
+facilities.
 
 In **2018** most active development went into integrating the new mobile
-apps with the desktop manager, and into writing ghini-3.1: python3 and gtk3
-based, and compatible with PostGIS.  as far as possible, all new features
-get backported to ghini-1.0.
+apps with the desktop manager, and into porting ghini to python3 and gtk3,
+add geographic awareness to it, and make it compatible with PostGIS.  As far
+as possible, all new features get backported to ghini-1.0.
