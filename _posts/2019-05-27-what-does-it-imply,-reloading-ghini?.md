@@ -18,11 +18,14 @@ You can install ghini server on your own server if you think so, and keep all in
 
 Or you can ask me to host it "in the cloud", if you prefer.
 
+![perplex](/images/perplex-man-balding.svg)
+
+Right, I know, and I'm even going to give you a further technical and
+necessary explanation, so please take a deep breath, and read on.
+
 ![freedom](/images/meditate-64.png)
 
-You took a deep breath, I hope, because here I'm offering you a technical
-explanation, see if it makes sense to you.  If it does not, please help me
-see where I'm not being clear.
+If it still makes any sense to you, please let me understand what you understand, so I'll fix my writing.
 
 You have been using ghini.desktop, and you know its structure, let's review
 it together:
