@@ -5,7 +5,7 @@ date:   2019-05-27 15:53
 categories: geek
 ---
 
-So you have been watching the last videos, and you wonder where this all is going to take us to.
+So you have been watching the last videos[*], and you wonder where this all is going to take us to.
 
 A user posed the question:
 
@@ -70,4 +70,8 @@ and 'problem'.  The great philosopher Bertrand Russel thought there was
 German mathematician prove him wrong, but if we stay in the framework of
 botany, please be assured that the only limiting factor is not Gödel's
 incompleteness theorem, but the lack of criticism.
+
+* For those of you who missed the videos: here's [the link to the new
+  playlist](https://www.youtube.com/playlist?list=PLtYRCnAxpinVw9AHl4fNXa15cekxebs9o)
+  on youtube.
 
