@@ -9,8 +9,9 @@ So you have been watching the last videos[*], and you wonder where this all is g
 
 A user posed the question:
 
-Betekent dit dat in de toekomst de database ergens in de cloud staat en dat je via een browser in kan loggen?
-(Does it mean that in the future the database stays somewhere "in the cloud" and that we log in via a browser?)
+> Betekent dit dat in de toekomst de database ergens in de cloud staat en dat je via een browser in kan loggen?
+
+> (Does it mean that in the future the database stays somewhere "in the cloud" and that we log in via a browser?)
 
 Well, no, and yes, depending on how you look at it.
 
