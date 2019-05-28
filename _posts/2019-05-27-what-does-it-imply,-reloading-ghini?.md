@@ -24,7 +24,7 @@ Or you can ask me to host it "in the cloud", if you prefer.
 Right, I know, and I'm even going to give you a further technical and
 necessary explanation, so please take a deep breath, and read on.
 
-![freedom](/images/meditate-64.png)
+![freedom](/images/meditate.svg)
 
 If it still makes any sense to you, please let me understand what you understand, so I'll fix my writing.
 
