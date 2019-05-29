@@ -39,8 +39,8 @@ it together:
 - Or you can use a database server like MySQL, or PostgreSQL, or whatever
   you prefer (again no change here),
 
-- Then you have a Python data abstraction layer, based on SQLAlchemy,
-  connecting to your database.  This is the core of ghini.desktop.
+- The core of ghini.desktop is a Python data abstraction layer, based on
+  SQLAlchemy, connecting to your database.  (This does change.)
 
   This layer is now isolated from the user interface, it's still written in
   Python, but based on Django, and it's obviously brand new.  You have to
@@ -50,7 +50,7 @@ it together:
 
 - The other part of ghini.desktop is the user interface, the visible part of
   the software, the one offering you menus and buttons windows and input
-  fields.
+  fields.  (Here, an even more radical change.)
 
   This has become a lightweight javascript program, and my goal was to let
   you hardly realize there is any program there.  All you see it's a web
@@ -66,12 +66,12 @@ Makes any sense?
 
 Oh, and an otherwise interesting remark I got: "ben benieuwd hoe het zich
 verder ontwikkelt" (I'm curious to see how it develops).  Well, how to put
-it.  This software, any software, it's written to solve problems, or to help
-*users* address a *problem*.  How it develops, it depends on the
-understanding that the *programmer* has of the previous two concepts 'user'
-and 'problem'.  The great philosopher Bertrand Russel thought there was
-*nothing* that can't be done by formal logic.  It took 20 years to have a
-German mathematician prove him wrong, but if we stay in the framework of
+it.  This software, any **software**, it's written to **solve** problems, or
+to help **users** address a **problem**.  How it develops, it depends on the
+*understanding* that the *programmer* has of the previous two concepts
+'user' and 'problem'.  The great philosopher Bertrand Russel thought there
+was *nothing* that can't be done by formal logic.  It took 20 years to have
+a German mathematician prove him wrong, but if we stay in the framework of
 botany, please be assured that the only limiting factor is not Gödel's
 incompleteness theorem, but the lack of criticism.
 
