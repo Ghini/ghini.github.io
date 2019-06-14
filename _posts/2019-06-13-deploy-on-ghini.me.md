@@ -2,7 +2,7 @@
 layout: post
 title:  "deploy on ghini.me"
 date:   2019-06-13 09:14
-categories: software
+categories: technical
 ---
 
 This is a technical entry, something like the "for me from myself" presents
