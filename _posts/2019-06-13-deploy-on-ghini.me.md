@@ -13,7 +13,7 @@ if the technicalities scare you, the message here is simply: ghini reloaded
 is going on-line at http://cuaderno.ghini.me, and the reason behind the name
 is that the collection shown is a 'cuaderno de colecta'.
 
-let's start.
+## let's start.
 
 First of all, we need a recent Python version, that's at least 3.5.  We
 first considered installing from source, that would give us 3.7.4, but we
@@ -28,7 +28,7 @@ we end up with python2.  so no pip, it's now pip3, and no virtualenv, it's
 now the much less memorizable `python3 -m venv`.  so much for
 'deprecated'.  uff.
 
-So what do we do … 
+## So what do we do … 
 
 ```bash
 sudo apt-get install python3-venv
@@ -55,7 +55,7 @@ some 20k taxa, mostly with synonymy and authorship.
 ./manage.py import_genera_derivation
 ```
 
-now the more difficult parts come.
+## now the more difficult parts come.
 
 We have to register a name for the outside site.  So let's tell our domain
 registrar that `cuaderno` is among the names we want to offer.
@@ -73,13 +73,13 @@ sudo service nginx reload
 
 what else, many bits, none of them so complex:
 
-- install gunicorn
+### install gunicorn
 
 that is nothing more than `pip3 install gunicorn`, that's it.
 
-- enable cuaderno to reach django,
-- configure for deployment
-- collect static files
+### enable cuaderno to reach django,
+#### configure for deployment
+#### collect static files
 
 well, by these points I mean: combine both the django pages and the static files in a single
 nginx configuration, not relying on the django `runserver` development command.  that's a
@@ -96,7 +96,7 @@ block, something like `location /static { alias /var/www/ghini/static/; }`.  don
 are all set, just run `gunicorn --bind 0.0.0.0:8080 ghini.wsgi`, or, better, replace that
 `0.0.0.0` with your server's IP address.
 
-- put a supervisor
+### put a supervisor
 
 precisely: with the above description, in order to run the server, we are requiring that you
 log in into the server, and run a script to start the program.  we can put this all in a
@@ -107,5 +107,6 @@ This isn't going to happen today.  I'll leave the program up and running,
 there's a guest/guest user, with full access to the data, so you may have a
 look, and experiment.
 
-- we need https,
-- we need some data.
+### we need https,
+
+### we need some data.
