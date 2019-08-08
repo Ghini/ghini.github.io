@@ -33,11 +33,11 @@ now the much less memorizable `python3 -m venv`.  so much for
 ```bash
 sudo apt-get install python3-venv
 python3 -m venv ~/.virtualenvs/ghini/
-mkdir -p ~/Local/github/mfrasca
-cd ~/Local/github/mfrasca
-( git clone git@github.com:mfrasca/ghini.git ||
-  git clone https://github.com/mfrasca/ghini.git )
-cd ghini
+mkdir -p ~/Local/github/Ghini
+cd ~/Local/github/Ghini
+( git clone git@github.com:Ghini/server.git ||
+  git clone https://github.com/Ghini/server.git )
+cd server
 . ~/.virtualenvs/ghini/bin/activate
 pip3 install -r requirements.txt
 ```
