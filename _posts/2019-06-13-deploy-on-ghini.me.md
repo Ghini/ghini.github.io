@@ -31,21 +31,21 @@ now the much less memorizable `python3 -m venv`.  so much for
 ## So what do we do … 
 
 ```bash
-sudo apt-get install python3-venv
-python3 -m venv ~/.virtualenvs/ghini/
 mkdir -p ~/Local/github/Ghini
 cd ~/Local/github/Ghini
 ( git clone git@github.com:Ghini/server.git ||
   git clone https://github.com/Ghini/server.git )
+sudo apt-get install python3-venv
+python3 -m venv ~/.virtualenvs/ghini/
 cd server
 . ~/.virtualenvs/ghini/bin/activate
 pip3 install -r requirements.txt
 ```
 
-This goes without hassle, it's just standard ways to any python3 program.
-Make sure you can create virtual environments, download the software, create
-a virtual environment for the software, activate it, and install the
-software in its isolated new virtual environment.
+This goes without hassle, it's just standard ways to any python3 program.  Decide where to
+download the software, download it, make sure you can create virtual environments, create a
+virtual environment for the software, activate it, and install the software in its isolated
+new virtual environment.
 
 ## iterate for each site
 
@@ -58,9 +58,9 @@ Or you only run it for a single site, that's also possible, it doesn't change th
 schema, that is to run the server on a "high" port, have the port open only for local
 requests, and to handle the outside communication with `nginx`.
 
-Right, let's assume we are doing the `cuaderno` site, on port `8088`.  We create the
-`ghini/settings_cuaderno.py` file, specifying the `RUNSERVER_PORT` and from there we refer to
-the `cuaderno` database, possibly like this:
+Right, let's assume we are doing the `cuaderno` site, letting it listen on port `8088`.  We
+create the `ghini/settings_cuaderno.py` file, specifying the `RUNSERVER_PORT` and from there
+we refer to the `cuaderno` database, possibly like this:
 
 ```
 DATABASES = {
@@ -92,11 +92,12 @@ Next, we have to couple all http requests relative to `cuaderno` to an
 internal port.  That's something for nginx.  Create an 'available' site, and
 enable it, using some templates, or copying around stuff, and adapting.
 
-Decide if you're doing things properly or not.  Doing things not properly is easier, you
-just run the server from the django `manage` script and disregard all considerations about
-security and efficiency.  An other option is to use `WSGI` sockets, start each server on a
-different socket, and to have nginx connect the incoming traffic for each registered name
-with the corresponding socket.
+Decide if you're doing things properly or not.  To be true, we have been describing how to
+go through the `manage runserver` mechanism, which is not the advisable way.  An other
+option is to use `WSGI` sockets.  Install `uwsgi`, use it to start each server on a
+different socket, and have nginx connect the incoming traffic for each registered name with
+the corresponding socket.  This actually spares us some administration, for sockets can be
+named, and we can use the same site name as socket name.
 
 When done, we need to reload the nginx configuration.  What other command
 makes sense, other than this:
