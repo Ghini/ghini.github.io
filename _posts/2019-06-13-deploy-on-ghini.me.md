@@ -28,7 +28,7 @@ we end up with python2.  so no pip, it's now pip3, and no virtualenv, it's
 now the much less memorizable `python3 -m venv`.  so much for
 'deprecated'.  uff.
 
-## So what do we do … 
+## So what do we do …
 
 ```bash
 mkdir -p ~/Local/github/Ghini
@@ -50,17 +50,25 @@ new virtual environment.
 ## iterate for each site
 
 All the above is about installing the software, with its dependencies.  The software can be
-used to serve as many sites as you wish, as long as you separate them, each on its port,
-each with its database, that is, each configured with its `settings` file.  Our
-`./manage.py` script allows for a `RUNSERVER_PORT` entry in the settings file.
+used to serve as many sites as you wish, as long as you separate them, each on its port, or
+socket, each with its database.  This is information that will be used by the `./manage.py`
+script, or by `uwsgi`, or by `nginx`, and every one of these programs uses a different
+configuration file.
 
-Or you only run it for a single site, that's also possible, it doesn't change the basic
-schema, that is to run the server on a "high" port, have the port open only for local
-requests, and to handle the outside communication with `nginx`.
+Ghini server tries to make things a bit easier: we have a modified `./manage.py` script
+which allows for a `RUNSERVER_PORT` entry in the settings file (useful with the `runserver`
+command), and we have a small bash script that will collect the `uwsgi` socket options from
+the `nginx/sites-available` directory, and produce the matching `wsgi.ini` files.
 
-Right, let's assume we are doing the `cuaderno` site, letting it listen on port `8088`.  We
-create the `ghini/settings_cuaderno.py` file, specifying the `RUNSERVER_PORT` and from there
-we refer to the `cuaderno` database, possibly like this:
+But chances are that you only run ghini server for a single site, that's also possible, it
+doesn't change the basic schema, that is to start the server using uwsgi, have the socket
+open only for local requests, and to handle the outside communication with `nginx`.
+
+The two scenarios are: `runserver`, `uwsgi`.  First case you specify the `RUNSERVER_PORT`
+option in the settings file, and you access your server on that port.  Second case you have
+a `nginx` configuration, and you create the matching `uwgsi` ini file with the
+`uwsgi.d/create-ini-files.sh` script.  In this case you do not need the `RUNSERVER_PORT`
+option.
 
 ```
 DATABASES = {
@@ -73,12 +81,40 @@ DATABASES = {
 RUNSERVER_PORT = 8088
 ```
 
-We should have the `ghini` database user, with the `create database` privilege, then we are
-all set to bootstrap the database using the customary Django method:
+We should have the `ghini` database user, with the `create database` privilege.  Use it,
+like we do here to create and initialize two databases:
+
+```
+$ psql -U ghini postgres
+psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
+Type "help" for help.
+
+postgres=# create database tanager;
+CREATE DATABASE
+postgres=# \c tanager
+psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
+You are now connected to database "tanager" as user "ghini".
+tanager=# CREATE EXTENSION postgis;
+CREATE EXTENSION
+tanager=# create database paardebloem;
+CREATE DATABASE
+tanager=# \c paardebloem
+psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
+You are now connected to database "paardebloem" as user "ghini".
+paardebloem=# CREATE EXTENSION postgis;
+CREATE EXTENSION
+paardebloem=#
+```
+
+Then we are all set to bootstrap the database using the customary Django method, after which
+we immediately create a superuser, and a guest:
 
 ```bash
-./manage.py --config ghini.settings_cuaderno migrate
-./manage.py --config ghini.settings_cuaderno import_genera_derivation
+./manage.py migrate --config ghini.settings_cuaderno
+./manage.py collectstatic --config ghini.settings_cuaderno
+./manage.py import_genera_derivation --config ghini.settings_cuaderno
+./manage.py createsuperuser --config ghini.settings_cuaderno
+./manage.py createguestuser --config ghini.settings_cuaderno
 ```
 
 ## register the name
