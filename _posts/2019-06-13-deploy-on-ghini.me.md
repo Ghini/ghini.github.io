@@ -144,19 +144,13 @@ We leave the acme-challenge location in place, because our certificates last 90 
 need to be renewed periodically, so it's easier to just keep the declaration even if we only
 use it for certificate renewal.
 
-When done, we reload the nginx configuration.
-
-```bash
-sudo service nginx reload
-```
-
 ### set up the database
 
 We should have the `ghini` database user, with the `create database` privilege.
 
 Here we create the `cuaderno` postgresql/postgis database, it's just two operations:
 
-```
+```bash
 $ createdb -U ghini cuaderno
 $ psql -U ghini cuaderno -c 'CREATE EXTENSION postgis;'
 CREATE EXTENSION
@@ -221,12 +215,20 @@ Summing up: (1) serve the site on port 443, for https; (2) add a redirect (301) 
 certbot will decide if it's indeed time to renew, or if the certificate still has more than
 30 days to go.
 
+## reload-restart nginx
+
+When done, we reload the nginx configuration.
+
+```bash
+sudo service nginx reload
+```
+
 ## run the services
 
 We put all our uwsgi files are in the same directory, so we can use `uwsgi` in 'emperor'
 mode.  Did you already install uwsgi?  you can put it in the same virtual environment as our
 django apps.  Activate the environment, move to the project directory, then run the command:
 
-```
-uwsgi --emperor $(pwd)/uwsgi.d/
+```bash
+$ uwsgi --emperor $(pwd)/uwsgi.d/
 ```
