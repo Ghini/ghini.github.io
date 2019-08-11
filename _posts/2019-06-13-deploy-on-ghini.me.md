@@ -6,27 +6,21 @@ categories: technical
 ---
 
 This is a technical entry, something like the "for me from myself" presents
-we used to include among the Christmas presents. The intention is to share
+we used to include among the Christmas presents.  The intention is to share
 the pleasure to receive a welcome present with the rest of you.
 
-if the technicalities scare you, the message here is simply: ghini reloaded
+If the technicalities scare you, the message here is simply: ghini reloaded
 is going on-line at http://cuaderno.ghini.me, and the reason behind the name
 is that the collection shown is a 'cuaderno de colecta'.
 
 ## let's start.
 
-First of all, we need a recent Python version, that's at least 3.5.  We
-first considered installing from source, that would give us 3.7.4, but we
-got entangled in such a cascade of dependencies, that after some three hours
-not seeing the end of it, we just decided we would make the step from debian
-8 (oldstable) to debian 9 (stable).  There's something funny about this, and
-that's we are about to end again in 'oldstable', because Debian 10 is
-expected soon.
+First of all, we need a recent Python version, that's at least 3.5.  Any recent distribution
+should have that, now that Debian has released its 10th version, with Python 3.7.
 
-pip and virtualenv are both included, but if we keep calling them this way,
-we end up with python2.  so no pip, it's now pip3, and no virtualenv, it's
-now the much less memorizable `python3 -m venv`.  so much for
-'deprecated'.  uff.
+We want virtualenv and pip.  Look for the details somewhere else, it should be contained in
+the package `python3-venv`.  Keep in mind that to create virtual environment, you use
+`python3 -m venv`.
 
 ## So what do we do …
 
@@ -39,36 +33,138 @@ sudo apt-get install python3-venv
 python3 -m venv ~/.virtualenvs/ghini/
 cd server
 . ~/.virtualenvs/ghini/bin/activate
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-This goes without hassle, it's just standard ways to any python3 program.  Decide where to
+This is just the standard installation procedure for any python3 program: decide where to
 download the software, download it, make sure you can create virtual environments, create a
 virtual environment for the software, activate it, and install the software in its isolated
 new virtual environment.
 
 ## iterate for each site
 
-All the above is about installing the software, with its dependencies.  The software can be
-used to serve as many sites as you wish, as long as you separate them, each on its port, or
-socket, each with its database.  This is information that will be used by the `./manage.py`
-script, or by `uwsgi`, or by `nginx`, and every one of these programs uses a different
-configuration file.
+All the above is about installing the software.  The software can be used to serve as many
+sites as you wish, as long as you separate them, each on its port, or socket, each with its
+database.  This is information that will be used by the `./manage.py` script, or by `uwsgi`,
+or by `nginx`, and every one of these programs uses a different configuration file.
 
 Ghini server tries to make things a bit easier: we have a modified `./manage.py` script
 which allows for a `RUNSERVER_PORT` entry in the settings file (useful with the `runserver`
 command), and we have a small bash script that will collect the `uwsgi` socket options from
 the `nginx/sites-available` directory, and produce the matching `wsgi.ini` files.
 
-But chances are that you only run ghini server for a single site, that's also possible, it
-doesn't change the basic schema, that is to start the server using uwsgi, have the socket
+Are you only interested in running ghini server for a single site?  That's also possible, it
+doesn't change the basic schema, that is to start the server using uwsgi, to keep the socket
 open only for local requests, and to handle the outside communication with `nginx`.
 
-The two scenarios are: `runserver`, `uwsgi`.  First case you specify the `RUNSERVER_PORT`
-option in the settings file, and you access your server on that port.  Second case you have
-a `nginx` configuration, and you create the matching `uwgsi` ini file with the
-`uwsgi.d/create-ini-files.sh` script.  In this case you do not need the `RUNSERVER_PORT`
-option.
+Let's call the two scenarios `runserver` and `uwsgi`.  First case you specify the
+`RUNSERVER_PORT` option in the settings file, and you access your server on that port.
+Second case, which you can use in deployment, you have a `nginx` configuration, and you
+create the matching `uwgsi` ini file with the `uwsgi.d/create-ini-files.sh` script.  In this
+case you do not need the `RUNSERVER_PORT` option.
+
+### configure for deployment
+
+Combine both the django pages and the static files in a single nginx configuration, not
+relying on the django `runserver` development command.  That's a few connected issues, none
+of which complex, but they all refer to each other, and it's easy to loose track.
+
+First of all, configure the location for the static data.  I don't mean `STATIC_URL`, that's
+`/static` and it won't change, I mean the physical location in the file system, that's the
+`STATIC_ROOT` variable.  Set that to something reasonable, create the directory, give
+yourself permission to write, then you may run the `collectstatic` from django.  It takes a
+split second and it should tell you 200 files or so.  Next step is to make these files
+served by nginx.  Open the site-available file, and add a `location` setting in the `server`
+block, something like `location /static { alias /var/www/ghini/static/; }`.
+
+### tell nginx about our server
+
+`nginx` role here is to make sure clients are using https, not plain http, then redirect all
+incoming traffic relative to our site to the internal port or socket where the server is
+running.  This is specified by the customary `nginx/sites-available/` file and its
+corresponding symbolic link from the `nginx/sites-enabled` directory.
+
+The `nginx` file for our `cuaderno` iteration has a first block redirecting all `80` traffic
+to `https`.
+
+```
+server {
+    listen       80;
+    listen       [::]:80;
+    server_name  cuaderno.ghini.me cuaderno;
+    return 301 https://$server_name$request_uri;
+}
+```
+
+Maybe we could make this a more general redirect, in its own file, redirecting all incoming
+http traffic to https regardless any other consideration.  See it yourself.
+
+All our https server block have this structure:
+
+```
+server {
+    server_name      cuaderno.ghini.me;
+    listen           443 ssl;
+    listen           [::]:443 ssl;
+    ssl_certificate     /etc/letsencrypt/live/server.ghini.me/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/server.ghini.me/privkey.pem;
+
+    ## location blocks
+}
+```
+
+The `location /` declaration is where we tell nginx that the requests are to be handled by
+uwgsi, on a specific port.  This is server-specific, and it is the only place where we
+specify the port.  Make sure there's no conflict in your settings.  On the Python side, we
+grab the setting from here and put into the ini file corresponding to each of our servers.
+
+```
+    location / {
+        include uwsgi_params;
+        uwsgi_pass 127.0.0.1:44410;
+    }
+```
+
+The other three declarations are for the certbot, static files, and for media files.  Only
+the media files `location` is server-specific:
+
+```
+    location ~ /.well-known/acme-challenge {
+        root /usr/share/nginx/html;
+    }
+    location /static {
+        alias /var/www/server.ghini.me/static/;
+    }
+    location /media {
+        alias /var/www/cuaderno.ghini.me/media/;
+    }
+```
+
+We leave the acme-challenge location in place, because our certificates last 90 days and
+need to be renewed periodically, so it's easier to just keep the declaration even if we only
+use it for certificate renewal.
+
+When done, we reload the nginx configuration.
+
+```bash
+sudo service nginx reload
+```
+
+### set up the database
+
+We should have the `ghini` database user, with the `create database` privilege.
+
+Here we create the `cuaderno` postgresql/postgis database, it's just two operations:
+
+```
+$ createdb -U ghini cuaderno
+$ psql -U ghini cuaderno -c 'CREATE EXTENSION postgis;'
+CREATE EXTENSION
+$
+```
+
+Refer to this database from the `ghini/settings_cuaderno.py` config file, like this (the
+`RUNSERVER_PORT` option is very optional):
 
 ```
 DATABASES = {
@@ -81,128 +177,56 @@ DATABASES = {
 RUNSERVER_PORT = 8088
 ```
 
-We should have the `ghini` database user, with the `create database` privilege.  Use it,
-like we do here to create and initialize two databases:
-
-```
-$ psql -U ghini postgres
-psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
-Type "help" for help.
-
-postgres=# create database tanager;
-CREATE DATABASE
-postgres=# \c tanager
-psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
-You are now connected to database "tanager" as user "ghini".
-tanager=# CREATE EXTENSION postgis;
-CREATE EXTENSION
-tanager=# create database paardebloem;
-CREATE DATABASE
-tanager=# \c paardebloem
-psql (11.5 (Debian 11.5-1+deb10u1), server 9.6.13)
-You are now connected to database "paardebloem" as user "ghini".
-paardebloem=# CREATE EXTENSION postgis;
-CREATE EXTENSION
-paardebloem=#
-```
-
 Then we are all set to bootstrap the database using the customary Django method, after which
 we immediately create a superuser, and a guest:
 
 ```bash
 ./manage.py migrate --config ghini.settings_cuaderno
 ./manage.py collectstatic --config ghini.settings_cuaderno
-./manage.py import_genera_derivation --config ghini.settings_cuaderno
 ./manage.py createsuperuser --config ghini.settings_cuaderno
 ./manage.py createguestuser --config ghini.settings_cuaderno
 ```
 
-## register the name
+### create the uwsgi ini file
 
-We have to register a name for the outside site.  So let's tell our domain
-registrar that `cuaderno` is among the names we want to offer.
+We have a script for it.  Edit, adjust, run.  It's in the uwsgi.d directory in the project
+structure.
 
-## tell nginx about our django app
+### register the name
 
-Next, we have to couple all http requests relative to `cuaderno` to an
-internal port.  That's something for nginx.  Create an 'available' site, and
-enable it, using some templates, or copying around stuff, and adapting.
+In deployment, we have to register a name for the outside site.  Use your domain registrar
+to tell the world that `cuaderno` is among the names you offer.
 
-Decide if you're doing things properly or not.  To be true, we have been describing how to
-go through the `manage runserver` mechanism, which is not the advisable way.  An other
-option is to use `WSGI` sockets.  Install `uwsgi`, use it to start each server on a
-different socket, and have nginx connect the incoming traffic for each registered name with
-the corresponding socket.  This actually spares us some administration, for sockets can be
-named, and we can use the same site name as socket name.
+## we need https
 
-When done, we need to reload the nginx configuration.  What other command
-makes sense, other than this:
+This we do after all iterations.  No need to iterate per server name.
 
-```bash
-sudo service nginx reload
-```
+Install `certbot` (it's both the program name and the Debian package name containing the
+program), do read the docs, or at least follow a guide, and if you refuse to do either
+things then at least use the `--dry-run` option, before you get banned for abusing patience.
 
-### collect static files
-
-```
-./manage.py --config ghini.settings_cuaderno collectstatic
-```
-
-### configure for deployment
-
-well, by these points I mean: combine both the django pages and the static files in a single
-nginx configuration, not relying on the django `runserver` development command.  that's a
-few connected issues, none of which complex, but they all refer to each other, and it's easy
-to loose track.
-
-first of all, configure the location for the static data.  I don't mean STATIC_URL, that's
-`/static` and it won't change, I mean the physical location in the file system, that's the
-`STATIC_ROOT` variable.  set that to something reasonable, create the directory, give
-yourself permission to write, then you may run the `collectstatic` from django.  it takes a
-split second and it should tell you 200 files or so.  next step is to make these files
-served by nginx.  open the site-available file, and add a `location` setting in the `server`
-block, something like `location /static { alias /var/www/ghini/static/; }`.  done this, we
-are all set, just run `gunicorn --bind 0.0.0.0:8080 ghini.wsgi`, or, better, replace that
-`0.0.0.0` with your server's IP address.
-
-### put a supervisor
-
-precisely: with the above description, in order to run the server, we are requiring that you
-log in into the server, and run a script to start the program.  we can put this all in a
-configuration for a supervisor.  there is one named `supervisor`, written in python, fitting
-in a virtual environment.
-
-This isn't going to happen today.  I'll leave the program up and running,
-there's a guest/guest user, with full access to the data, so you may have a
-look, and experiment.
-
-### we need https
-
-That's easy, just install `certbot` (it's both the program name and the Debian package name
-containing the program), do read the docs, or at least follow a guide, and if you refuse to
-do either things then at least use the `--dry-run` option, before you get banned for abusing
- patience.
-
-Remember, we're handling all external communication with `nginx`, so that's easy, we only
-need to tweak our enabled virtual sites configurations to serve the "challenge" from the
-same directory where `certbot` will write it, so assuming you run this:
+Remember, we're handling all external communication with `nginx`, so that's easy, we already
+tweaked our virtual sites configurations to serve the "challenge", all from the same
+directory, now we run the `certbot` using that same setting:
 
 ```
 sudo certbot certonly --webroot -w /usr/share/nginx/html/ -d cuaderno.ghini.me
 ```
 
-you should have the following `location` definition in each of the site definition files:
+Add as many server names as needed.
+
+Summing up: (1) serve the site on port 443, for https; (2) add a redirect (301) from http
+(port 80) to https; (3) keep record of each site name with its corresponding internal port;
+(4) add a crontab to renew the certificate, running the 1st and 15th of each month: the
+certbot will decide if it's indeed time to renew, or if the certificate still has more than
+30 days to go.
+
+## run the services
+
+We put all our uwsgi files are in the same directory, so we can use `uwsgi` in 'emperor'
+mode.  Did you already install uwsgi?  you can put it in the same virtual environment as our
+django apps.  Activate the environment, move to the project directory, then run the command:
 
 ```
-    location ~ /.well-known/acme-challenge {
-        root /usr/share/nginx/html;
-    }
+uwsgi --emperor $(pwd)/uwsgi.d/
 ```
-
-A few more things: (1) serve the site on port 443, for https; (2) add a redirect (301) from
-http (port 80) to https; (3) keep record of each site name with its corresponding internal
-port; (4) add a crontab to renew the certificate, running the 1st and 15th of each month:
-the certbot will decide if it's indeed time to renew, or if the certificate still has more
-than 30 days to go.
-
-### we need some data.
