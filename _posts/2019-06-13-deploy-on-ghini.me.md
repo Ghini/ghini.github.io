@@ -175,16 +175,18 @@ Then we are all set to bootstrap the database using the customary Django method,
 we immediately create a superuser, and a guest:
 
 ```bash
-./manage.py migrate --config ghini.settings_cuaderno
-./manage.py collectstatic --config ghini.settings_cuaderno
-./manage.py createsuperuser --config ghini.settings_cuaderno
-./manage.py createguestuser --config ghini.settings_cuaderno
+./manage.py migrate --settings ghini.settings_cuaderno
+./manage.py collectstatic --settings ghini.settings_cuaderno
+./manage.py createsuperuser --settings ghini.settings_cuaderno
+./manage.py createguestuser --settings ghini.settings_cuaderno
 ```
 
 ### create the uwsgi ini file
 
-We have a script for it.  Edit, adjust, run.  It's in the uwsgi.d directory in the project
-structure.
+We have a script for it, it collects names and ports from the `sites-available`
+configurations, and creates the expected corresponding uwsgi configuration files.  The
+script is in the uwsgi.d directory in the project structure.  Review, adjust if necessary,
+run.
 
 ### register the name
 
@@ -211,9 +213,9 @@ Add as many server names as needed.
 
 Summing up: (1) serve the site on port 443, for https; (2) add a redirect (301) from http
 (port 80) to https; (3) keep record of each site name with its corresponding internal port;
-(4) add a crontab to renew the certificate, running the 1st and 15th of each month: the
-certbot will decide if it's indeed time to renew, or if the certificate still has more than
-30 days to go.
+(4) add a crontab to renew the certificate, maybe running once every 4 weeks, on Sundays.  A
+certificate lasts 90 days and is considered due for renewal during the last 30 days, the
+certbot will decide if it's indeed time to renew, or if it can wait.
 
 ## reload-restart nginx
 
