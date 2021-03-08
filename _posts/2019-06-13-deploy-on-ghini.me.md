@@ -234,3 +234,5 @@ django apps.  Activate the environment, move to the project directory, then run 
 ```bash
 $ uwsgi --emperor $(pwd)/uwsgi.d/
 ```
+
+… well, maybe not precisely like this, we need to protect it from HUP signals, or even better we could run this as a service.
