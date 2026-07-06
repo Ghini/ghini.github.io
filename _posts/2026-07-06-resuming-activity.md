@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ghini.desktop activity resumed after long gap"
-date:   2026-07-06 17:00
+date:   2026-07-06 12:00
 categories: software
 ---
 
