@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ghini.desktop activity resumed after long gap
-categories: software
+title:  "ghini.desktop activity resumed after long gap"
 date:   2026-07-06 17:00
+categories: software
 ---
 
 After a long period without visible updates on this repository, development activity on Ghini.desktop has resumed.
